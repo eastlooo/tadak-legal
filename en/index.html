@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tadak Legal Center</title>
+    <title>Tadak Landing | OMILSOFT</title>
     <meta
       name="description"
-      content="Tadak Terms of Service and Privacy Policy by OMILSOFT."
+      content="Tadak operations hub landing: app intro, iOS download, screenshots, feedback, terms, and privacy links."
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="shell topbar-inner">
-        <a class="brand" href="./index.html">
+        <a class="brand" href="./index.html" aria-label="Tadak Landing Home">
           <span class="brand-badge" aria-hidden="true"></span>
-          <span class="brand-text">Tadak Legal Center</span>
+          <span class="brand-text">Tadak Landing</span>
         </a>
         <div class="nav-wrap">
-          <nav class="nav" aria-label="primary">
-            <a href="./terms.html">Terms</a>
-            <a href="./privacy.html">Privacy</a>
+          <nav class="nav" aria-label="landing section links">
+            <a href="#download">iOS Download</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#legal">Legal</a>
           </nav>
           <div class="lang-switch" aria-label="language switch">
             <a href="../index.html">KO</a>
@@ -30,31 +32,105 @@
       </div>
     </header>
 
-    <main class="shell hero">
-      <div class="hero-card">
-        <div class="eyebrow">OMILSOFT</div>
-        <h1>Tadak Policy Hub</h1>
-        <p class="hero-sub">Find all legal documents for Tadak in one place.</p>
-        <div class="meta">
-          <span class="chip">Updated 2026-02-23</span>
-          <span class="chip">Contact: omilsoft@gmail.com</span>
+    <main class="shell landing-main">
+      <section class="landing-hero" id="intro" aria-labelledby="intro-title">
+        <p class="landing-kicker">OMILSOFT Operations Hub</p>
+        <h1 id="intro-title">Tadak: Build typing speed with familiar writing</h1>
+        <p class="landing-intro">
+          Tadak is a Korean-focused typing app that improves both speed and accuracy with meaningful text practice.
+          It combines account sync, progress tracking, and community-based content practice in one flow.
+        </p>
+        <div class="landing-chips">
+          <span class="chip">MVP Landing</span>
+          <span class="chip">Release Target: 2026-02-27 (Fri)</span>
+          <span class="chip">Updated: 2026-02-23</span>
         </div>
+      </section>
 
-        <div class="cards">
-          <a class="card-link" href="./terms.html">
-            <h3>Terms of Service</h3>
-            <p>Service conditions, user obligations, billing and liability rules.</p>
+      <section class="landing-section" id="download" aria-labelledby="download-title">
+        <div class="landing-section-head">
+          <h2 id="download-title">1. iOS Download</h2>
+          <p>Install Tadak directly from the App Store.</p>
+        </div>
+        <a
+          class="cta-store"
+          href="https://apps.apple.com/us/app/tadak/id6443688240"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span class="cta-label">Download on the App Store</span>
+          <span class="cta-url">apps.apple.com/us/app/tadak/id6443688240</span>
+        </a>
+      </section>
+
+      <section class="landing-section" id="screenshots" aria-labelledby="screenshots-title">
+        <div class="landing-section-head">
+          <h2 id="screenshots-title">2. App Screenshots</h2>
+          <p>Preview three core screens before install.</p>
+        </div>
+        <div class="shot-grid">
+          <figure class="shot-card">
+            <img src="../assets/screenshots/login.png" alt="Tadak login selection screen" loading="lazy" />
+            <figcaption>Login Selection</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img src="../assets/screenshots/home.png" alt="Tadak home dashboard screen" loading="lazy" />
+            <figcaption>Home Dashboard</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img src="../assets/screenshots/profile.png" alt="Tadak profile and settings screen" loading="lazy" />
+            <figcaption>Profile and Settings</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="landing-section" id="feedback" aria-labelledby="feedback-title">
+        <div class="landing-section-head">
+          <h2 id="feedback-title">3. Bug Report and Feedback</h2>
+          <p>Send details directly to the operations team.</p>
+        </div>
+        <div class="feedback-grid">
+          <a
+            class="feedback-link"
+            href="mailto:omilsoft@gmail.com?subject=%5BTadak%5D%20Bug%20Report"
+          >
+            <h3>Report a Bug</h3>
+            <p>Please include reproduction steps, device model, and app version.</p>
           </a>
-          <a class="card-link" href="./privacy.html">
-            <h3>Privacy Policy</h3>
-            <p>Data collection, purpose of use, retention period and user rights.</p>
+          <a
+            class="feedback-link"
+            href="mailto:omilsoft@gmail.com?subject=%5BTadak%5D%20Product%20Feedback"
+          >
+            <h3>Share Feedback</h3>
+            <p>Feature requests, UX suggestions, and product comments are welcome.</p>
           </a>
         </div>
-      </div>
+      </section>
+
+      <section class="landing-section" id="legal" aria-labelledby="legal-title">
+        <div class="landing-section-head">
+          <h2 id="legal-title">4. Terms and Privacy</h2>
+          <p>Both Korean and English policy pages are available.</p>
+        </div>
+        <div class="legal-grid">
+          <a class="legal-link" href="../terms.html">Terms of Service (KO)</a>
+          <a class="legal-link" href="../privacy.html">Privacy Policy (KO)</a>
+          <a class="legal-link" href="./terms.html">Terms of Service (EN)</a>
+          <a class="legal-link" href="./privacy.html">Privacy Policy (EN)</a>
+        </div>
+      </section>
+
+      <section class="landing-section" id="contact" aria-labelledby="contact-title">
+        <div class="landing-section-head">
+          <h2 id="contact-title">5. Contact Email</h2>
+          <p>For operational or legal inquiries, contact us here.</p>
+        </div>
+        <a class="contact-mail" href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a>
+      </section>
     </main>
 
     <footer class="shell foot">
-      © 2026 OMILSOFT. All rights reserved.
+      © 2026 OMILSOFT. Tadak Operations Hub Landing.
     </footer>
   </body>
 </html>

@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tadak Legal Center</title>
+    <title>Tadak Landing | OMILSOFT</title>
     <meta
       name="description"
-      content="Tadak Terms of Service and Privacy Policy by OMILSOFT."
+      content="타닥타닥 운영 허브 랜딩: 앱 소개, 다운로드, 스크린샷, 피드백, 이용약관, 개인정보처리방침 안내."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="shell topbar-inner">
-        <a class="brand" href="./index.html">
+        <a class="brand" href="./index.html" aria-label="Tadak Landing Home">
           <span class="brand-badge" aria-hidden="true"></span>
-          <span class="brand-text">Tadak Legal Center</span>
+          <span class="brand-text">Tadak Landing</span>
         </a>
         <div class="nav-wrap">
-          <nav class="nav" aria-label="primary">
-            <a href="./terms.html">Terms</a>
-            <a href="./privacy.html">Privacy</a>
+          <nav class="nav" aria-label="landing section links">
+            <a href="#download">iOS 다운로드</a>
+            <a href="#screenshots">스크린샷</a>
+            <a href="#feedback">피드백</a>
+            <a href="#legal">Legal</a>
           </nav>
           <div class="lang-switch" aria-label="language switch">
             <a class="active" href="./index.html">KO</a>
@@ -30,33 +32,106 @@
       </div>
     </header>
 
-    <main class="shell hero">
-      <div class="hero-card">
-        <div class="eyebrow">OMILSOFT</div>
-        <h1>Tadak Policy Hub</h1>
-        <p class="hero-sub">
-          타닥타닥 서비스 정책 문서를 한 곳에서 확인할 수 있습니다.
+    <main class="shell landing-main">
+      <section class="landing-hero" id="intro" aria-labelledby="intro-title">
+        <p class="landing-kicker">OMILSOFT 운영 허브</p>
+        <h1 id="intro-title">타닥타닥(Tadak): 매일 쓰는 문장으로 타이핑 연습</h1>
+        <p class="landing-intro">
+          타닥타닥은 익숙한 글을 기반으로 정확도와 속도를 함께 훈련하는 한국어 중심 타이핑 앱입니다.
+          계정 연동, 기록 관리, 커뮤니티 글 연습을 통해 개인 연습부터 공개 글 기반 연습까지 한 곳에서
+          이어서 사용할 수 있습니다.
         </p>
-        <div class="meta">
-          <span class="chip">Updated 2026-02-23</span>
-          <span class="chip">Contact: omilsoft@gmail.com</span>
+        <div class="landing-chips">
+          <span class="chip">MVP Landing</span>
+          <span class="chip">출시 목표: 2026-02-27 (금)</span>
+          <span class="chip">Updated: 2026-02-23</span>
         </div>
+      </section>
 
-        <div class="cards">
-          <a class="card-link" href="./terms.html">
-            <h3>Terms of Service</h3>
-            <p>서비스 이용조건, 권리/의무, 결제/책임 관련 기준</p>
+      <section class="landing-section" id="download" aria-labelledby="download-title">
+        <div class="landing-section-head">
+          <h2 id="download-title">1. iOS 다운로드</h2>
+          <p>App Store에서 바로 설치할 수 있습니다.</p>
+        </div>
+        <a
+          class="cta-store"
+          href="https://apps.apple.com/us/app/tadak/id6443688240"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span class="cta-label">Download on the App Store</span>
+          <span class="cta-url">apps.apple.com/us/app/tadak/id6443688240</span>
+        </a>
+      </section>
+
+      <section class="landing-section" id="screenshots" aria-labelledby="screenshots-title">
+        <div class="landing-section-head">
+          <h2 id="screenshots-title">2. 앱 스크린샷</h2>
+          <p>핵심 화면 3장을 미리 확인할 수 있습니다.</p>
+        </div>
+        <div class="shot-grid">
+          <figure class="shot-card">
+            <img src="./assets/screenshots/login.png" alt="타닥타닥 로그인 선택 화면" loading="lazy" />
+            <figcaption>로그인 선택</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img src="./assets/screenshots/home.png" alt="타닥타닥 홈 화면" loading="lazy" />
+            <figcaption>홈 대시보드</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img src="./assets/screenshots/profile.png" alt="타닥타닥 프로필 및 설정 화면" loading="lazy" />
+            <figcaption>프로필/설정</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="landing-section" id="feedback" aria-labelledby="feedback-title">
+        <div class="landing-section-head">
+          <h2 id="feedback-title">3. 버그 신고 및 피드백</h2>
+          <p>아래 링크로 운영팀에 바로 전달됩니다.</p>
+        </div>
+        <div class="feedback-grid">
+          <a
+            class="feedback-link"
+            href="mailto:omilsoft@gmail.com?subject=%5BTadak%5D%20Bug%20Report"
+          >
+            <h3>버그 신고</h3>
+            <p>오류 화면/재현 단계/기기 정보와 함께 보내주세요.</p>
           </a>
-          <a class="card-link" href="./privacy.html">
-            <h3>Privacy Policy</h3>
-            <p>수집 항목, 이용 목적, 보관 기간, 이용자 권리 안내</p>
+          <a
+            class="feedback-link"
+            href="mailto:omilsoft@gmail.com?subject=%5BTadak%5D%20Product%20Feedback"
+          >
+            <h3>피드백 전달</h3>
+            <p>불편사항, 개선 제안, 신규 기능 아이디어를 받습니다.</p>
           </a>
         </div>
-      </div>
+      </section>
+
+      <section class="landing-section" id="legal" aria-labelledby="legal-title">
+        <div class="landing-section-head">
+          <h2 id="legal-title">4. Terms / Privacy</h2>
+          <p>한국어/영어 정책 문서를 모두 제공합니다.</p>
+        </div>
+        <div class="legal-grid">
+          <a class="legal-link" href="./terms.html">Terms of Service (KO)</a>
+          <a class="legal-link" href="./privacy.html">Privacy Policy (KO)</a>
+          <a class="legal-link" href="./en/terms.html">Terms of Service (EN)</a>
+          <a class="legal-link" href="./en/privacy.html">Privacy Policy (EN)</a>
+        </div>
+      </section>
+
+      <section class="landing-section" id="contact" aria-labelledby="contact-title">
+        <div class="landing-section-head">
+          <h2 id="contact-title">5. 문의 이메일</h2>
+          <p>운영 관련 문의는 아래 이메일로 받습니다.</p>
+        </div>
+        <a class="contact-mail" href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a>
+      </section>
     </main>
 
     <footer class="shell foot">
-      © 2026 OMILSOFT. All rights reserved.
+      © 2026 OMILSOFT. Tadak Operations Hub Landing.
     </footer>
   </body>
 </html>
