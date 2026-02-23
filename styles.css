@@ -397,6 +397,18 @@ li {
   max-width: 70ch;
 }
 
+.landing-share-link {
+  margin: 12px 0 0;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.landing-share-link a {
+  color: #67e8f9;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(103, 232, 249, 0.6);
+}
+
 .landing-chips {
   margin-top: 16px;
   display: flex;
@@ -488,8 +500,9 @@ li {
   width: 100%;
   border-radius: 12px;
   display: block;
-  aspect-ratio: 390 / 844;
-  object-fit: cover;
+  aspect-ratio: 1242 / 2208;
+  object-fit: contain;
+  background: #0b1020;
   box-shadow: 0 10px 24px rgba(2, 6, 23, 0.42);
 }
 
