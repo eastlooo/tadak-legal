@@ -1,13 +1,11 @@
 :root {
   --bg: #0b1020;
-  --bg-soft: #141c33;
   --card: rgba(17, 24, 39, 0.78);
   --card-border: rgba(148, 163, 184, 0.24);
   --text: #e5e7eb;
   --text-soft: #9ca3af;
   --brand: #22d3ee;
   --brand-2: #60a5fa;
-  --ok: #34d399;
   --max: 1040px;
   --shadow: 0 20px 60px rgba(2, 8, 23, 0.45);
 }
@@ -75,6 +73,12 @@ a {
   letter-spacing: 0.2px;
 }
 
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -94,6 +98,30 @@ a {
   color: #dff9ff;
   border-color: rgba(34, 211, 238, 0.45);
   background: rgba(34, 211, 238, 0.13);
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: var(--text-soft);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-right: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.lang-switch a:last-child {
+  border-right: 0;
+}
+
+.lang-switch a.active {
+  color: #ecfeff;
+  background: rgba(34, 211, 238, 0.17);
 }
 
 .hero {
@@ -313,6 +341,12 @@ li {
     align-items: flex-start;
     padding: 8px 0;
     min-height: auto;
+  }
+
+  .nav-wrap {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .cards {
