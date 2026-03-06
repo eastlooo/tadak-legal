@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tadak Landing | OMILSOFT</title>
+    <title>Tadak Legal Hub | OMILSOFT</title>
     <meta
       name="description"
-      content="타닥타닥 운영 허브 랜딩: 앱 소개, 다운로드, 스크린샷, 피드백, 이용약관, 개인정보처리방침 안내."
+      content="타닥타닥의 개인정보처리방침, 이용약관, 지원, 계정 삭제, 커뮤니티 정책, 운영자 정보를 한 번에 확인하는 법적 허브입니다."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="shell topbar-inner">
-        <a class="brand" href="./index.html" aria-label="Tadak Landing Home">
+        <a class="brand" href="./index.html" aria-label="Tadak Legal Hub Home">
           <span class="brand-badge" aria-hidden="true"></span>
-          <span class="brand-text">타닥타닥 랜딩</span>
+          <span class="brand-text">Tadak Legal Hub</span>
         </a>
         <div class="nav-wrap">
-          <nav class="nav" aria-label="landing section links">
-            <a href="#download">iOS 다운로드</a>
-            <a href="#screenshots">스크린샷</a>
-            <a href="#feedback">피드백</a>
-            <a href="#legal">약관</a>
+          <nav class="nav" aria-label="legal hub links">
+            <a class="active" href="./index.html">Hub</a>
+            <a href="./terms.html">Terms</a>
+            <a href="./privacy.html">Privacy</a>
+            <a href="./support.html">Support</a>
+            <a href="./account-deletion.html">Deletion</a>
+            <a href="./community-policy.html">Community</a>
           </nav>
           <div class="lang-switch" aria-label="language switch">
             <a class="active" href="./index.html">KO</a>
@@ -34,120 +36,124 @@
 
     <main class="shell landing-main">
       <section class="landing-hero" id="intro" aria-labelledby="intro-title">
-        <p class="landing-kicker">OMILSOFT 운영 허브</p>
-        <h1 id="intro-title">타닥타닥(Tadak): 매일 쓰는 문장으로 타이핑 연습</h1>
+        <p class="landing-kicker">OMILSOFT Legal and Support Hub</p>
+        <h1 id="intro-title">타닥타닥 제출용 정책, 지원, 계정 삭제 링크 모음</h1>
         <p class="landing-intro">
-          타닥타닥은 익숙한 글을 기반으로 정확도와 속도를 함께 훈련하는 한국어 중심 타이핑 앱입니다.
-          계정 연동, 기록 관리, 커뮤니티 글 연습을 통해 개인 연습부터 공개 글 기반 연습까지 한 곳에서
-          이어서 사용할 수 있습니다.
-        </p>
-        <p class="landing-share-link">
-          공유용 짧은 주소:
-          <a href="https://is.gd/tadakhub" target="_blank" rel="noreferrer">is.gd/tadakhub</a>
+          이 허브는 타닥타닥의 공개 법적 문서와 지원 채널을 한 곳에 모은 페이지입니다. 앱 내
+          `terms/privacy` 링크와 스토어 제출용 URL이 충돌하지 않도록 같은 기준으로 관리합니다.
         </p>
         <div class="landing-chips">
-          <span class="chip">MVP 랜딩</span>
-          <span class="chip">출시 목표: 2026-02-27 (금)</span>
-          <span class="chip">업데이트: 2026-02-23</span>
+          <span class="chip">Updated: 2026-03-06</span>
+          <span class="chip">iOS App Store 배포 중</span>
+          <span class="chip">Android Google Play 출시 준비 중</span>
+        </div>
+        <div class="inline-links">
+          <a href="./privacy.html">개인정보처리방침</a>
+          <a href="./terms.html">이용약관</a>
+          <a href="./support.html">지원</a>
+          <a href="./account-deletion.html">계정 삭제</a>
+          <a href="./community-policy.html">커뮤니티 정책</a>
         </div>
       </section>
 
-      <section class="landing-section" id="download" aria-labelledby="download-title">
+      <section class="landing-section" id="documents" aria-labelledby="documents-title">
         <div class="landing-section-head">
-          <h2 id="download-title">1. iOS 다운로드</h2>
-          <p>App Store에서 바로 설치할 수 있습니다.</p>
+          <h2 id="documents-title">1. 공개 문서와 제출용 링크</h2>
+          <p>스토어 심사 또는 사용자 안내에 바로 사용할 수 있는 독립 URL입니다.</p>
         </div>
-        <a
-          class="cta-store"
-          href="https://apps.apple.com/us/app/tadak/id6443688240"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span class="cta-label">App Store에서 다운로드</span>
-          <span class="cta-url">apps.apple.com/us/app/tadak/id6443688240</span>
-        </a>
-      </section>
-
-      <section class="landing-section" id="screenshots" aria-labelledby="screenshots-title">
-        <div class="landing-section-head">
-          <h2 id="screenshots-title">2. 앱 스크린샷</h2>
-          <p>실제 App Store 등록 이미지 3장을 미리 확인할 수 있습니다.</p>
-        </div>
-        <div class="shot-grid">
-          <figure class="shot-card">
-            <img
-              src="./assets/screenshots/appstore/shot1.png"
-              alt="타닥타닥 앱스토어 스크린샷 1"
-              loading="lazy"
-            />
-            <figcaption>앱스토어 스크린샷 1</figcaption>
-          </figure>
-          <figure class="shot-card">
-            <img
-              src="./assets/screenshots/appstore/shot2.png"
-              alt="타닥타닥 앱스토어 스크린샷 2"
-              loading="lazy"
-            />
-            <figcaption>앱스토어 스크린샷 2</figcaption>
-          </figure>
-          <figure class="shot-card">
-            <img
-              src="./assets/screenshots/appstore/shot3.png"
-              alt="타닥타닥 앱스토어 스크린샷 3"
-              loading="lazy"
-            />
-            <figcaption>앱스토어 스크린샷 3</figcaption>
-          </figure>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3><a href="./privacy.html">개인정보처리방침</a></h3>
+            <p>수집 항목, 처리 목적, 보유 기간, 권리 행사, 문의 채널을 안내합니다.</p>
+          </article>
+          <article class="doc-card">
+            <h3><a href="./terms.html">이용약관</a></h3>
+            <p>서비스 이용 조건, 금지 행위, 결제와 환불, 분쟁 기준을 안내합니다.</p>
+          </article>
+          <article class="doc-card">
+            <h3><a href="./support.html">지원</a></h3>
+            <p>지원 이메일, 접수 시 필요한 정보, 관련 문서 바로가기를 제공합니다.</p>
+          </article>
+          <article class="doc-card">
+            <h3><a href="./account-deletion.html">계정 삭제 안내</a></h3>
+            <p>앱 내 삭제 경로, 삭제 범위, 처리 방식, 문의 이메일을 설명합니다.</p>
+          </article>
+          <article class="doc-card">
+            <h3><a href="./community-policy.html">커뮤니티 정책</a></h3>
+            <p>모두의 공간 게시 기준, 신고 처리, 노출 제한 원칙을 정리합니다.</p>
+          </article>
+          <article class="doc-card">
+            <h3><a href="./operator-info.html">사업자/운영자 정보</a></h3>
+            <p>회사명, 대표자, 사업자등록번호, 소재지, 연락처를 독립 URL로 제공합니다.</p>
+          </article>
         </div>
       </section>
 
-      <section class="landing-section" id="feedback" aria-labelledby="feedback-title">
+      <section class="landing-section" id="store" aria-labelledby="store-title">
         <div class="landing-section-head">
-          <h2 id="feedback-title">3. 버그 신고 및 피드백</h2>
-          <p>아래 링크로 운영팀에 바로 전달됩니다.</p>
+          <h2 id="store-title">2. 스토어 제출에 바로 쓰는 URL</h2>
+          <p>현재 사이트 구조와 앱 공개 링크 기준으로 유지하는 추천 URL입니다.</p>
         </div>
-        <div class="feedback-grid">
-          <a
-            class="feedback-link"
-            href="mailto:omilsoft@gmail.com?subject=%5BTadak%5D%20Bug%20Report"
-          >
-            <h3>버그 신고</h3>
-            <p>오류 화면/재현 단계/기기 정보와 함께 보내주세요.</p>
-          </a>
-          <a
-            class="feedback-link"
-            href="mailto:omilsoft@gmail.com?subject=%5BTadak%5D%20Product%20Feedback"
-          >
-            <h3>피드백 전달</h3>
-            <p>불편사항, 개선 제안, 신규 기능 아이디어를 받습니다.</p>
-          </a>
+        <div class="url-list">
+          <div class="url-item">
+            <strong>Privacy Policy URL</strong>
+            <a href="./privacy.html">https://eastlooo.github.io/tadak-legal/privacy.html</a>
+          </div>
+          <div class="url-item">
+            <strong>Data Deletion URL</strong>
+            <a href="./account-deletion.html">https://eastlooo.github.io/tadak-legal/account-deletion.html</a>
+          </div>
+          <div class="url-item">
+            <strong>Support URL</strong>
+            <a href="./support.html">https://eastlooo.github.io/tadak-legal/support.html</a>
+          </div>
+          <div class="url-item">
+            <strong>Legal Hub URL</strong>
+            <a href="./index.html">https://eastlooo.github.io/tadak-legal/</a>
+          </div>
         </div>
       </section>
 
-      <section class="landing-section" id="legal" aria-labelledby="legal-title">
+      <section class="landing-section" id="platform" aria-labelledby="platform-title">
         <div class="landing-section-head">
-          <h2 id="legal-title">4. 이용약관 / 개인정보처리방침</h2>
-          <p>정책 문서를 한국어와 영어로 모두 제공합니다.</p>
+          <h2 id="platform-title">3. 플랫폼 상태와 공식 채널</h2>
+          <p>스토어 상태와 공식 사이트 링크를 함께 확인할 수 있습니다.</p>
         </div>
-        <div class="legal-grid">
-          <a class="legal-link" href="./terms.html">이용약관 (KO)</a>
-          <a class="legal-link" href="./privacy.html">개인정보처리방침 (KO)</a>
-          <a class="legal-link" href="./en/terms.html">Terms of Service (EN)</a>
-          <a class="legal-link" href="./en/privacy.html">Privacy Policy (EN)</a>
+        <div class="status-grid">
+          <article class="status-card">
+            <strong>iOS</strong>
+            <p>현재 App Store에서 배포 중입니다.</p>
+            <div class="inline-links">
+              <a
+                href="https://apps.apple.com/us/app/tadak/id6443688240"
+                target="_blank"
+                rel="noreferrer"
+              >
+                App Store 열기
+              </a>
+            </div>
+          </article>
+          <article class="status-card">
+            <strong>Android</strong>
+            <p>Google Play 첫 출시를 준비 중이며, 공개 배포 URL은 아직 발급되지 않았습니다.</p>
+          </article>
+          <article class="status-card">
+            <strong>공식 사이트</strong>
+            <p>공식 사이트 소스는 별도로 관리되며, 퍼블릭 배포 전에도 사업자 정보와 제출용 링크는 이 허브에서 독립 URL로 확인할 수 있습니다.</p>
+          </article>
+          <article class="status-card">
+            <strong>문의 이메일</strong>
+            <p>법적 문의, 계정 삭제 문의, 일반 지원은 동일한 공식 이메일로 접수합니다.</p>
+            <div class="inline-links">
+              <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a>
+            </div>
+          </article>
         </div>
-      </section>
-
-      <section class="landing-section" id="contact" aria-labelledby="contact-title">
-        <div class="landing-section-head">
-          <h2 id="contact-title">5. 문의 이메일</h2>
-          <p>운영 관련 문의는 아래 이메일로 받습니다.</p>
-        </div>
-        <a class="contact-mail" href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a>
       </section>
     </main>
 
     <footer class="shell foot">
-      © 2026 OMILSOFT. 타닥타닥 운영 허브 랜딩.
+      © 2026 OMILSOFT. Tadak Legal Hub.
     </footer>
   </body>
 </html>
