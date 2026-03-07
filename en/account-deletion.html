@@ -4,8 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tadak Account Deletion | OMILSOFT</title>
-    <meta name="description" content="Tadak account deletion instructions." />
-    <link rel="stylesheet" href="../styles.css" />
+    <meta
+      name="description"
+      content="Tadak account deletion and data deletion instructions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
+    <meta property="og:image:alt" content="Tadak Legal Hub share image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
+    <meta name="theme-color" content="#231a35" />
+    <link rel="stylesheet" href="../styles.css?v=20260307-legal-1" />
   </head>
   <body>
     <header class="topbar">
@@ -49,9 +58,9 @@
           <div class="summary">
             <h2>Quick Summary</h2>
             <ul>
-              <li>You can delete your account directly in the app through `Profile > Account Management > Delete`.</li>
-              <li>Once confirmed, the current service deletes profile data, records, user-created posts, and related activity history.</li>
-              <li>If you cannot access the app, contact <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a>.</li>
+              <li>You can delete your account directly in the app through `Profile &gt; Account Management &gt; Delete`.</li>
+              <li>Once confirmed, account-linked data such as profile information, records, writings, likes, imports, and post-report history is handled as deletion targets.</li>
+              <li>tracking, feedback, ad, ATT, review, and user-report logs may be retained for operational purposes only after account identifiers are removed.</li>
             </ul>
           </div>
 
@@ -59,47 +68,63 @@
             <h3>1. How to Request Deletion</h3>
             <ol class="step-list">
               <li>Open the Tadak app.</li>
-              <li>Go to `Profile > Account Management`.</li>
+              <li>Go to `Profile &gt; Account Management`.</li>
               <li>Select `Delete`.</li>
               <li>Acknowledge the notice and confirm `Delete Account`.</li>
             </ol>
             <div class="section-note">
-              <p>If you cannot access the app, you may email the support address for deletion-related assistance.</p>
+              <p>If you cannot access the app, email <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a> for deletion support.</p>
             </div>
           </section>
 
           <section id="s2">
-            <h3>2. Deletion and Anonymization Scope</h3>
+            <h3>2. Data Deleted with the Account</h3>
             <ul class="link-list">
-              <li>Deleted items: profile, practice records, user-created posts, public community posts, likes, imports, reports, and related audit records.</li>
-              <li>For guest usage: the guest account, local records, and created posts are removed together.</li>
-              <li>For these current targets, the service deletes the data rather than retaining it in anonymized form.</li>
+              <li>Profile data, nickname, and settings</li>
+              <li>Practice records and rank-related data</li>
+              <li>Private writings and public community posts you created</li>
+              <li>Likes, imports, and post-report history tied to your account</li>
+              <li>Your hidden or blocked author list</li>
+              <li>Certain account-linked audit records such as legacy migration audit entries</li>
             </ul>
           </section>
 
           <section id="s3">
-            <h3>3. Handling Flow and SLA</h3>
+            <h3>3. Data That May Remain After Deletion</h3>
             <ul class="link-list">
-              <li>Once final in-app confirmation is completed, deletion is executed immediately and cannot be reversed.</li>
-              <li>Email requests are reviewed and answered in order on business days.</li>
-              <li>If identity verification is required, we may ask for additional confirmation by email.</li>
+              <li>tracking_events may remain only after user_id, anonymous_id, session_id, and other account identifiers are removed and identifier fields inside payload are redacted.</li>
+              <li>In-app feedback and bug reports may remain only after user_id is removed, the message is replaced with a deleted-account placeholder, and identifier fields in metadata are redacted.</li>
+              <li>ad_interstitial_events, att_prompt_events, and review_funnel_events may remain only after user_id and identifier fields in metadata are removed.</li>
+              <li>community_user_reports may remain as moderation history only after reporter or target identifiers are removed and identifying fields inside the target snapshot are redacted.</li>
+              <li>Apple App Store or Google Play purchase, restore, or refund history is retained separately by the relevant store provider.</li>
+              <li>Your Google, Apple, or Kakao account with that provider is not automatically closed or deleted when you delete your Tadak account.</li>
             </ul>
           </section>
 
           <section id="s4">
-            <h3>4. Notes</h3>
+            <h3>4. Guest Account Deletion</h3>
             <ul class="link-list">
-              <li>Tadak account deletion covers the service account and app data managed by OMILSOFT.</li>
-              <li>Deletion or closure of external login provider accounts is governed by each provider's own policy.</li>
+              <li>Deleting a guest account removes the guest state together with writings and records tied to that guest account.</li>
+              <li>Guest accounts cannot publish publicly in the community feed. Public sharing requires account linking first.</li>
             </ul>
           </section>
 
           <section id="s5">
-            <h3>5. Contact Email</h3>
+            <h3>5. Handling Flow and Important Notes</h3>
+            <ul class="link-list">
+              <li>After final confirmation in the app, deletion is executed immediately and cannot be reversed.</li>
+              <li>Email requests are reviewed on business days in the order received.</li>
+              <li>We may request additional information to verify identity or confirm the requested scope.</li>
+            </ul>
+          </section>
+
+          <section id="s6">
+            <h3>6. Related Documents and Contact</h3>
             <p><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></p>
             <div class="inline-links">
               <a href="./support.html">Support</a>
               <a href="./privacy.html">Privacy Policy</a>
+              <a href="./terms.html">Terms of Service</a>
             </div>
           </section>
         </article>
@@ -108,10 +133,11 @@
           <nav class="toc" aria-label="account deletion table of contents">
             <h4>On This Page</h4>
             <a href="#s1">1. How to Request Deletion</a>
-            <a href="#s2">2. Deletion and Anonymization Scope</a>
-            <a href="#s3">3. Handling Flow and SLA</a>
-            <a href="#s4">4. Notes</a>
-            <a href="#s5">5. Contact Email</a>
+            <a href="#s2">2. Data Deleted</a>
+            <a href="#s3">3. Data That May Remain</a>
+            <a href="#s4">4. Guest Account Deletion</a>
+            <a href="#s5">5. Handling Flow and Notes</a>
+            <a href="#s6">6. Related Documents and Contact</a>
             <div class="contact-box">Contact: omilsoft@gmail.com</div>
           </nav>
         </aside>

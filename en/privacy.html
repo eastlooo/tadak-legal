@@ -4,8 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tadak Privacy Policy</title>
-    <meta name="description" content="Tadak Privacy Policy." />
-    <link rel="stylesheet" href="../styles.css" />
+    <meta
+      name="description"
+      content="Tadak Privacy Policy covering login, ad identifiers, analytics, UGC, reports, feedback, purchases/restores, and account deletion."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
+    <meta property="og:image:alt" content="Tadak Legal Hub share image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
+    <meta name="theme-color" content="#231a35" />
+    <link rel="stylesheet" href="../styles.css?v=20260307-legal-1" />
   </head>
   <body>
     <header class="topbar">
@@ -49,115 +58,153 @@
           <div class="summary">
             <h2>Quick Summary</h2>
             <ul>
-              <li>We process personal information only for service operation, account management, and security.</li>
-              <li>You can exercise your rights through the in-app account deletion flow or by contacting us by email.</li>
-              <li>For current deletion targets, the service deletes data rather than retaining it in anonymized form.</li>
+              <li>Tadak processes account data, typing records, public posts, reports, feedback, and ad or purchase-related data to operate the service.</li>
+              <li>We use Google, Apple, and Kakao sign-in, together with Firebase Analytics, Supabase, Google AdMob, and app store billing systems.</li>
+              <li>When you delete your account, core account data is deleted, but some feedback, analytics, and store-side billing history may remain outside the immediate account deletion flow.</li>
             </ul>
           </div>
 
           <section id="p1">
-            <h3>1. Data We Collect</h3>
+            <h3>1. Personal Information We Process</h3>
+            <h4>1-1. Account and login information</h4>
             <ul>
-              <li>Account/authentication data: user identifiers, login provider details, email if provided.</li>
-              <li>Profile data: nickname and app settings such as theme, font, and language.</li>
-              <li>Usage/device data: logs, feature events, error logs, app version, and OS information.</li>
-              <li>Billing/ad data: purchase state and ad events within the permitted scope.</li>
-              <li>Community activity data: posts, likes, imports, and report history.</li>
+              <li>Guest status, internal user identifier, login state</li>
+              <li>Social login provider information for Google, Apple, and Kakao, including provider name, provider user identifier, and email if shared</li>
+              <li>Linked account state and last login provider</li>
+            </ul>
+            <h4>1-2. Profile and app settings</h4>
+            <ul>
+              <li>Nickname, nickname tag, preferred theme, font, and language settings</li>
+            </ul>
+            <h4>1-3. User-generated content (UGC)</h4>
+            <ul>
+              <li>Titles, body text, artist field, language, and visibility setting for writings you create</li>
+              <li>Community feed posts, visibility state, quality score, report count, and moderation notes</li>
+              <li>Likes, imports, and public sharing history</li>
+              <li>Hidden or blocked author state and your hidden-author list</li>
+            </ul>
+            <h4>1-4. Report data</h4>
+            <ul>
+              <li>Post reports: reporter identifier, reported post identifier, report reason, and report timestamp</li>
+              <li>User reports: reporter identifier, reported user identifier, related post identifier, report reason, report timestamp, and target snapshot</li>
+              <li>Aggregated report counts, temporary hidden status, and moderation review state</li>
+            </ul>
+            <h4>1-5. Feedback data</h4>
+            <ul>
+              <li>In-app feedback or bug report message, category, submission source, platform, and app version</li>
+              <li>Metadata such as submission time, signed-in user identifier when applicable, and client timestamp</li>
+            </ul>
+            <h4>1-6. Purchase, restore, and ad data</h4>
+            <ul>
+              <li>Ad removal product ID, purchase start or success or failure or restore state, and store error codes</li>
+              <li>Refund or entitlement revocation reason and local ad-removal state</li>
+              <li>Ad impression, click, and revenue events, including network and placement information</li>
+            </ul>
+            <h4>1-7. Ad identifiers and ATT</h4>
+            <ul>
+              <li>iOS ATT pre-prompt exposure, variant, and authorization status</li>
+              <li>Advertising identifier or equivalent ad measurement data within the scope allowed by the operating system and your settings</li>
+            </ul>
+            <h4>1-8. Analytics and device or usage data</h4>
+            <ul>
+              <li>Firebase Analytics and Supabase tracking_events for app open, session start or end, practice start or completion, experiment exposure, and ad or purchase events</li>
+              <li>anonymous_id, user_id, session_id, practice_id, platform, app version, and event payloads created during operation</li>
+              <li>Operational and error logs used for service maintenance and abuse prevention</li>
             </ul>
           </section>
 
           <section id="p2">
             <h3>2. Purposes of Use</h3>
             <ul>
-              <li>Provide typing practice, progress storage, account management, and community features.</li>
-              <li>Handle sync, user support, and account deletion requests.</li>
-              <li>Improve quality, respond to incidents, and prevent abuse or policy violations.</li>
-              <li>Process payments, analytics, and operational decision making.</li>
+              <li>Account identification, sign-in, guest-to-social linking, and session management</li>
+              <li>Typing practice, record storage, writing management, and public community posting</li>
+              <li>Receiving reports, hiding or blocking authors, temporarily hiding content, moderation review, and policy enforcement</li>
+              <li>Reviewing feedback, handling bugs, and responding to support requests</li>
+              <li>Providing ads, processing ad-removal purchases, restoring purchases, and handling billing support</li>
+              <li>Service analytics, experimentation, quality improvement, operational decision-making, and fraud prevention</li>
+              <li>Security, legal compliance, and dispute handling</li>
             </ul>
           </section>
 
           <section id="p3">
-            <h3>3. Retention and Deletion</h3>
+            <h3>3. Retention and Deletion Standard</h3>
             <ul>
-              <li>We delete data without undue delay once the processing purpose is fulfilled.</li>
-              <li>Data may be retained only for the period required by law.</li>
-              <li>When account deletion is completed, the current service deletes profile, records, user-created posts, likes, imports, reports, and related audit records.</li>
-              <li>For these current deletion targets, we do not operate a separate anonymized retention policy.</li>
+              <li>Account, profile, typing records, private writings, public posts, likes, imports, and hidden-author data are generally retained while the account remains active and are handled as deletion targets when the account is deleted.</li>
+              <li>Post reports are handled as deletion targets when tied to the deleted account, but user reports may remain after reporter or target identifiers are removed so moderation history can be retained.</li>
+              <li>In-app feedback data and analytics, ad, or billing event logs may be retained in separate logs for service improvement, abuse prevention, billing support, and operational analytics.</li>
+              <li>After account deletion, tracking_events, in_app_feedback_events, ad_interstitial_events, att_prompt_events, review_funnel_events, and community_user_reports may remain only in a pseudonymous or identifier-redacted operational log form.</li>
+              <li>If you type personal or sensitive information directly into a feedback or report message, that text may remain as submitted content. Please avoid including sensitive information.</li>
+              <li>We may retain data longer when required by law, for dispute handling, for security investigation, or under app store billing rules.</li>
             </ul>
+            <div class="section-note">
+              <p>The current in-app account deletion flow deletes profile data, records, writings, likes, imports, post reports, hidden-author data, and some audit records. Tracking, feedback, ad, ATT, review, and user-report logs may be retained separately only after account identifiers are removed.</p>
+            </div>
           </section>
 
           <section id="p4">
-            <h3>4. External Services</h3>
-            <p>We may rely on the following external services to operate the app.</p>
+            <h3>4. External Services and International Processing</h3>
+            <p>We use the services below to operate the app, and data may be processed outside Korea in connection with those services.</p>
             <ul>
-              <li>Infrastructure/Data: Supabase</li>
-              <li>Analytics/Logging: Firebase Analytics and related tools</li>
-              <li>Ads: Google AdMob and related ad services</li>
-              <li>Authentication: login providers supported by the app</li>
-              <li>Billing: app store payment systems such as the iOS App Store or Android Google Play</li>
+              <li>Supabase: authentication, profile, record, UGC, report, feedback, and tracking_events storage</li>
+              <li>Firebase Analytics: analytics for app usage, sessions, practice, billing, and ad events</li>
+              <li>Google AdMob: ad delivery, ad performance measurement, and ad revenue aggregation</li>
+              <li>Google, Apple, and Kakao sign-in: authentication and account linking</li>
+              <li>Apple App Store and Google Play: purchase, restore, refund, and entitlement handling</li>
             </ul>
-            <p>We do not sell personal information without a legal basis.</p>
+            <p>Because these providers operate global infrastructure, information may be processed on servers located outside Korea, including the United States and other jurisdictions used by the relevant provider.</p>
           </section>
 
           <section id="p5">
-            <h3>5. International Processing</h3>
-            <p>
-              Personal information may be processed outside your country because of cloud infrastructure and analytics tooling. We apply legally required safeguards.
-            </p>
+            <h3>5. Ad Identifiers and ATT</h3>
+            <ul>
+              <li>On iOS, we may record ATT pre-prompt behavior and authorization results before or after the system request.</li>
+              <li>Advertising identifiers or equivalent ad measurement data are used only within the limits allowed by the operating system, your settings, and applicable policy.</li>
+              <li>If you purchase ad removal, ad display can be limited in-app, and restore eligibility is checked against store purchase history.</li>
+            </ul>
           </section>
 
           <section id="p6">
-            <h3>6. Your Rights</h3>
+            <h3>6. Account Deletion and Post-Deletion Exceptions</h3>
             <ul>
-              <li>You may request access, correction, deletion, and suspension of processing.</li>
-              <li>You may use the in-app deletion flow or email us if you cannot access the app.</li>
-              <li>Detailed deletion scope and handling steps are available on the <a href="./account-deletion.html">Account Deletion page</a>.</li>
+              <li>In-app route: `Profile &gt; Account Management &gt; Delete`</li>
+              <li>Deletion targets include profile, practice records, private writings, community posts, likes, imports, post reports, hidden-author data, and certain legacy migration audit records directly tied to the account.</li>
+              <li>For guest usage, deleting the guest account removes the guest state and the writings or records tied to that account.</li>
+              <li>Separate analytics logs, in-app feedback, monetization logs, ATT or review events, user-report moderation logs, and app store purchase history may remain in pseudonymous, separated, or provider-side systems after account deletion.</li>
+              <li>Deleting your Tadak account does not automatically delete your Google, Apple, or Kakao account with that provider.</li>
             </ul>
           </section>
 
           <section id="p7">
-            <h3>7. Security Measures</h3>
+            <h3>7. Your Rights and How to Exercise Them</h3>
             <ul>
-              <li>We operate technical and administrative safeguards for access control, transmission protection, and monitoring.</li>
-              <li>We follow incident response procedures to reduce impact and prevent recurrence.</li>
+              <li>You may contact us about access, correction, deletion, or suspension of processing.</li>
+              <li>If you can access the app, please use the in-app account deletion flow first.</li>
+              <li>If you cannot access the app or need additional help, contact us by email.</li>
+              <li>See the <a href="./account-deletion.html">Account Deletion page</a> for deletion scope and the <a href="./community-policy.html">Community Policy</a> for reporting and moderation standards.</li>
             </ul>
           </section>
 
           <section id="p8">
-            <h3>8. Policy Changes</h3>
-            <p>We may revise this policy and will provide notice for material changes through public links or in-app notice.</p>
+            <h3>8. Security Measures</h3>
+            <ul>
+              <li>We apply access controls, authentication management, transmission protection, and operational monitoring.</li>
+              <li>Operational access for reports, moderation, feedback review, and account deletion is limited to what is necessary.</li>
+              <li>We follow procedures to reduce impact and prevent recurrence if a security incident occurs.</li>
+            </ul>
           </section>
 
           <section id="p9">
-            <h3>9. Privacy Contact</h3>
-            <ul>
-              <li>Channel: OMILSOFT Privacy Team</li>
-              <li>Email: <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></li>
-              <li>Email requests are reviewed and answered in order on business days.</li>
-            </ul>
+            <h3>9. Policy Changes</h3>
+            <p>We will provide notice through public URLs or in-app notice before material changes to service integrations, retention standards, or processing scope take effect.</p>
           </section>
 
           <section id="p10">
-            <h3>10. External Relief Channels (Korea)</h3>
-            <p>If you need legal or regulatory assistance in Korea, you may contact the following agencies.</p>
+            <h3>10. Privacy Contact and Related Links</h3>
             <ul>
-              <li>
-                Personal Information Infringement Report Center:
-                <a href="https://privacy.kisa.or.kr" target="_blank" rel="noreferrer">privacy.kisa.or.kr</a>
-              </li>
-              <li>
-                Cyber Investigation Division (Supreme Prosecutors' Office):
-                <a href="https://cybercid.spo.go.kr" target="_blank" rel="noreferrer">cybercid.spo.go.kr</a>
-              </li>
-              <li>
-                Korean National Police Cyber Bureau:
-                <a href="https://ecrm.police.go.kr/minwon/main" target="_blank" rel="noreferrer">ecrm.police.go.kr</a>
-              </li>
+              <li>Channel: OMILSOFT Privacy Team</li>
+              <li>Email: <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></li>
+              <li>Email requests are reviewed on business days in the order received.</li>
             </ul>
-          </section>
-
-          <section id="contact">
-            <h3>11. Related Links</h3>
             <div class="inline-links">
               <a href="./terms.html">Terms of Service</a>
               <a href="./support.html">Support</a>
@@ -170,22 +217,21 @@
         <aside class="aside">
           <nav class="toc" aria-label="privacy table of contents">
             <h4>On This Page</h4>
-            <a href="#p1">1. Data We Collect</a>
+            <a href="#p1">1. Personal Information We Process</a>
             <a href="#p2">2. Purposes of Use</a>
             <a href="#p3">3. Retention and Deletion</a>
-            <a href="#p4">4. External Services</a>
-            <a href="#p5">5. International Processing</a>
-            <a href="#p6">6. Your Rights</a>
-            <a href="#p7">7. Security Measures</a>
-            <a href="#p8">8. Policy Changes</a>
-            <a href="#p9">9. Privacy Contact</a>
-            <a href="#p10">10. External Relief Channels</a>
-            <a href="#contact">11. Related Links</a>
+            <a href="#p4">4. External Services and International Processing</a>
+            <a href="#p5">5. Ad Identifiers and ATT</a>
+            <a href="#p6">6. Account Deletion and Exceptions</a>
+            <a href="#p7">7. Your Rights</a>
+            <a href="#p8">8. Security Measures</a>
+            <a href="#p9">9. Policy Changes</a>
+            <a href="#p10">10. Privacy Contact</a>
             <div class="contact-box">Contact: omilsoft@gmail.com</div>
             <div class="toc-group">
               <div class="toc-label">Quick Links</div>
               <a href="./account-deletion.html">Account Deletion</a>
-              <a href="./support.html">Support</a>
+              <a href="./community-policy.html">Community Policy</a>
             </div>
           </nav>
         </aside>
