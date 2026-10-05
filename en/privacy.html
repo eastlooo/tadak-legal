@@ -6,7 +6,7 @@
     <title>Tadak Privacy Policy</title>
     <meta
       name="description"
-      content="Tadak Privacy Policy covering login, ad identifiers, analytics, UGC, reports, feedback, purchases/restores, and account deletion."
+      content="Tadak Privacy Policy covering login, AI Writing, ad identifiers, analytics and crash reporting, user content, reports, feedback, purchases and subscriptions, and account deletion."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
@@ -47,8 +47,8 @@
           <h1>Tadak Privacy Policy</h1>
           <p class="hero-sub">How we collect, use, retain, and delete personal information</p>
           <div class="meta">
-            <span class="chip">Effective: 2026-03-06</span>
-            <span class="chip">Last Updated: 2026-03-06</span>
+            <span class="chip">Effective: October 6, 2026</span>
+            <span class="chip">Announced: October 5, 2026</span>
           </div>
         </div>
       </section>
@@ -58,153 +58,252 @@
           <div class="summary">
             <h2>Quick Summary</h2>
             <ul>
-              <li>Tadak processes account data, typing records, public posts, reports, feedback, and ad or purchase-related data to operate the service.</li>
-              <li>We use Google, Apple, and Kakao sign-in, together with Firebase Analytics, Supabase, Google AdMob, and app store billing systems.</li>
-              <li>When you delete your account, core account data is deleted, but some feedback, analytics, and store-side billing history may remain outside the immediate account deletion flow.</li>
+              <li>Tadak processes account data, nicknames, typing practice records, text you write, reports and feedback, and purchase- and ad-related information to the extent needed to operate the service.</li>
+              <li>Your real name and profile photo from social sign-in (Google, Apple, Kakao) are <strong>not stored in your service profile</strong>; the app only uses the nickname you choose. However, the name and photo URL that Google or Kakao send at sign-in may be kept in the login record of our authentication system (Supabase Auth) (see 1-1).</li>
+              <li>When you use <strong>AI Writing</strong>, the topic and situation description you select or enter are sent to OpenAI to generate practice text. OpenAI does not use this data to train its AI models.</li>
+              <li>We use Supabase (servers and data storage), Firebase Analytics and Crashlytics (usage analytics and crash reporting), Google AdMob (ads), Apple App Store and Google Play (payments), and OpenAI (AI text generation).</li>
+              <li>When you delete your account, data tied to your account such as your profile, records, and posts is deleted. Some operational and payment logs may remain with identifiers removed.</li>
             </ul>
           </div>
 
           <section id="p1">
             <h3>1. Personal Information We Process</h3>
+            <p>Tadak does not use a separate sign-up form. The information below is collected through social sign-in, through your use of the app, and from what you enter directly.</p>
             <h4>1-1. Account and login information</h4>
             <ul>
-              <li>Guest status, internal user identifier, login state</li>
-              <li>Social login provider information for Google, Apple, and Kakao, including provider name, provider user identifier, and email if shared</li>
-              <li>Linked account state and last login provider</li>
+              <li>Internal user identifier (UUID), guest status, login status</li>
+              <li>Social sign-in provider information: provider name (Google, Apple, Kakao), provider user identifier, email address (if provided)</li>
+              <li>List of linked sign-in methods and the most recent sign-in provider</li>
             </ul>
+            <div class="section-note">
+              <p><strong>Information not stored in your service profile</strong>: Your real name and profile photo, which a provider may send during social sign-in, are not stored in Tadak's service data (your profile). Sign in with Apple on iOS does not request your name. However, when Google or Kakao include your name and photo URL in the authentication token, this information (name, profile photo URL) is kept in the login record of our authentication system (Supabase Auth). It is not used for any service feature such as app screens, rankings, or the community, and it is deleted when you delete your account.</p>
+            </div>
             <h4>1-2. Profile and app settings</h4>
             <ul>
-              <li>Nickname, nickname tag, preferred theme, font, and language settings</li>
+              <li>Nickname, nickname tag, preferred theme, font, font size, language setting</li>
             </ul>
-            <h4>1-3. User-generated content (UGC)</h4>
+            <h4>1-3. Typing practice and learning records</h4>
             <ul>
-              <li>Titles, body text, artist field, language, and visibility setting for writings you create</li>
-              <li>Community feed posts, visibility state, quality score, report count, and moderation notes</li>
-              <li>Likes, imports, and public sharing history</li>
-              <li>Hidden or blocked author state and your hidden-author list</li>
+              <li>Practice records (typing speed, accuracy, practice time, keyboard type, content practiced), ranking scores, practice streaks, mission and achievement history, transcription (e.g., Bible) progress</li>
+              <li>Weak-spot summary (frequently missed letter, final consonant, and spacing patterns and their error rates). Weak-spot analysis is calculated on your device, and only summary figures are sent to our server.</li>
             </ul>
-            <h4>1-4. Report data</h4>
+            <h4>1-4. User content</h4>
             <ul>
-              <li>Post reports: reporter identifier, reported post identifier, report reason, and report timestamp</li>
-              <li>User reports: reporter identifier, reported user identifier, related post identifier, report reason, report timestamp, and target snapshot</li>
-              <li>Aggregated report counts, temporary hidden status, and moderation review state</li>
+              <li>Title, body, author name, language, and visibility of text you write</li>
+              <li>Text created with AI Writing (title, body) and whether it was saved</li>
+              <li>Posts published to the shared space ("Everyone's Space"), public/hidden status, quality score, report count, moderation notes</li>
+              <li>Likes, imports, sharing history, and your list of hidden/blocked authors</li>
             </ul>
-            <h4>1-5. Feedback data</h4>
+            <h4>1-5. AI Writing input</h4>
             <ul>
-              <li>In-app feedback or bug report message, category, submission source, platform, and app version</li>
-              <li>Metadata such as submission time, signed-in user identifier when applicable, and client timestamp</li>
+              <li>A topic chosen from suggestions or a topic you enter yourself</li>
+              <li>"My real-life text" input: your relationship with the recipient, tone, length, situation description, (messenger) how you address the other person or their name (optional), (email) recipient's name and title (optional), purpose</li>
+              <li>"Weak-spot practice text" input: the weak-spot summary calculated on your device (type, error rate, sample size, example words). The sentences you actually typed are not sent.</li>
+              <li>We do not store the original input on our server. We only store a hash (a value transformed so the original cannot be recovered) to detect duplicate requests.</li>
+              <li>Input in contact-information formats, such as phone numbers, email addresses, and links, is not accepted. Please do not include real personal information (real names, contact details, addresses, etc.) in situation descriptions.</li>
             </ul>
-            <h4>1-6. Purchase, restore, and ad data</h4>
+            <h4>1-6. Reports and feedback</h4>
             <ul>
-              <li>Ad removal product ID, purchase start or success or failure or restore state, and store error codes</li>
-              <li>Refund or entitlement revocation reason and local ad-removal state</li>
-              <li>Ad impression, click, and revenue events, including network and placement information</li>
+              <li>Post reports: reporter identifier, reported post identifier, reason, time of report</li>
+              <li>User reports: reporter and reported user identifiers, related post identifier, reason, time of report, snapshot of the reported content</li>
+              <li>In-app feedback and bug reports: content, category, submission path, platform, app version, submission time, user identifier (if signed in)</li>
             </ul>
-            <h4>1-7. Ad identifiers and ATT</h4>
+            <h4>1-7. Purchases and passes</h4>
             <ul>
-              <li>iOS ATT pre-prompt exposure, variant, and authorization status</li>
-              <li>Advertising identifier or equivalent ad measurement data within the scope allowed by the operating system and your settings</li>
+              <li>Product IDs for Remove Ads, Tadak Plus (subscription), and AI generation passes; transaction identifiers; purchase/restore/renewal/refund status; store error codes</li>
+              <li>History of generation passes (tickets) granted, used, and expired, including passes granted for watching rewarded ads</li>
+              <li>Payment methods (such as card numbers) are handled by Apple and Google; Tadak does not receive them.</li>
             </ul>
-            <h4>1-8. Analytics and device or usage data</h4>
+            <h4>1-8. Ads and advertising identifiers</h4>
             <ul>
-              <li>Firebase Analytics and Supabase tracking_events for app open, session start or end, practice start or completion, experiment exposure, and ad or purchase events</li>
-              <li>anonymous_id, user_id, session_id, practice_id, platform, app version, and event payloads created during operation</li>
-              <li>Operational and error logs used for service maintenance and abuse prevention</li>
+              <li>Ad impression, click, and reward events; ad placement information</li>
+              <li>Rewarded ad verification (SSV): only a single-use token issued by our server is included in the ad network's callback; your user ID and posts are not included.</li>
+              <li>Whether the iOS App Tracking Transparency (ATT) explainer was shown and whether you allowed or denied tracking</li>
+              <li>Advertising identifiers: on iOS, the IDFA is used by Google AdMob for personalized ads and ad measurement only if you allow it in ATT. On Android, the Advertising ID is used by Google AdMob to serve and measure ads, subject to your device's ad settings (deleting or resetting the Advertising ID).</li>
+              <li>Google AdMob may process approximate location inferred from your IP address and device and performance information to serve ads.</li>
+            </ul>
+            <h4>1-9. Usage analytics and crash information</h4>
+            <ul>
+              <li>Firebase Analytics and Supabase event records: app launches, sessions, practice start/finish, feature use, experiment exposure, ad and purchase events</li>
+              <li>Per-install anonymous ID (anonymous_id), user ID, session ID, platform, app version</li>
+              <li>Firebase Crashlytics crash reports: error details, device model, OS version, app state information, and a hash of your user ID (a value transformed so the original cannot be recovered)</li>
             </ul>
           </section>
 
           <section id="p2">
             <h3>2. Purposes of Use</h3>
             <ul>
-              <li>Account identification, sign-in, guest-to-social linking, and session management</li>
-              <li>Typing practice, record storage, writing management, and public community posting</li>
-              <li>Receiving reports, hiding or blocking authors, temporarily hiding content, moderation review, and policy enforcement</li>
-              <li>Reviewing feedback, handling bugs, and responding to support requests</li>
-              <li>Providing ads, processing ad-removal purchases, restoring purchases, and handling billing support</li>
-              <li>Service analytics, experimentation, quality improvement, operational decision-making, and fraud prevention</li>
-              <li>Security, legal compliance, and dispute handling</li>
+              <li>Identifying members, keeping you signed in, converting guest/social accounts, and linking accounts</li>
+              <li>Saving typing practice records and providing rankings, missions, achievements, and transcription records</li>
+              <li>Keeping your personal posts and handling public/private status in the shared space</li>
+              <li>AI Writing: generating the practice text you request and checking inputs and outputs for harmful content</li>
+              <li>Receiving community reports, hiding/blocking, reviewing sanctions, and preventing policy violations</li>
+              <li>Reviewing feedback, responding to errors, and providing customer support</li>
+              <li>Serving ads, granting rewarded-ad rewards, and processing purchases, subscriptions, restores, and refunds</li>
+              <li>Analyzing service usage and improving quality (Firebase Analytics data is not linked to Google Ads and is used only to improve the app)</li>
+              <li>Security, fraud prevention, legal compliance, and dispute resolution</li>
             </ul>
           </section>
 
           <section id="p3">
-            <h3>3. Retention and Deletion Standard</h3>
+            <h3>3. Retention and Destruction</h3>
+            <h4>3-1. Retention periods</h4>
             <ul>
-              <li>Account, profile, typing records, private writings, public posts, likes, imports, and hidden-author data are generally retained while the account remains active and are handled as deletion targets when the account is deleted.</li>
-              <li>Post reports are handled as deletion targets when tied to the deleted account, but user reports may remain after reporter or target identifiers are removed so moderation history can be retained.</li>
-              <li>In-app feedback data and analytics, ad, or billing event logs may be retained in separate logs for service improvement, abuse prevention, billing support, and operational analytics.</li>
-              <li>After account deletion, tracking_events, in_app_feedback_events, ad_interstitial_events, att_prompt_events, review_funnel_events, and community_user_reports may remain only in a pseudonymous or identifier-redacted operational log form.</li>
-              <li>If you type personal or sensitive information directly into a feedback or report message, that text may remain as submitted content. Please avoid including sensitive information.</li>
-              <li>We may retain data longer when required by law, for dispute handling, for security investigation, or under app store billing rules.</li>
+              <li>Account, profile, practice records, posts, AI-created text, public posts, likes/imports, and hide/block data are kept while your account exists and deleted when you delete your account.</li>
+              <li>We do not store the original AI Writing input on our server. See Section 4 for OpenAI's retention.</li>
+              <li>Post reports are deleted when you delete your account. User reports may remain with reporter and reported-user identifiers removed, to preserve moderation history.</li>
+              <li>Feedback and analytics, ad, and payment event logs may be kept with account identifiers removed or partially masked, for service improvement, fraud prevention, and payment support.</li>
+              <li>Purchase, subscription, and refund records are kept under the Korean Act on the Consumer Protection in Electronic Commerce for the following periods: records of contracts or withdrawal of offers, 5 years; records of payment and supply of goods, 5 years; records of consumer complaints or dispute resolution, 3 years.</li>
+              <li>Text you enter in feedback or report reasons may be kept exactly as submitted, so please do not include sensitive information.</li>
             </ul>
-            <div class="section-note">
-              <p>The current in-app account deletion flow deletes profile data, records, writings, likes, imports, post reports, hidden-author data, and some audit records. Tracking, feedback, ad, ATT, review, and user-report logs may be retained separately only after account identifiers are removed.</p>
-            </div>
+            <h4>3-2. Destruction procedure and method</h4>
+            <ul>
+              <li>Personal information whose retention period has ended or whose purpose has been fulfilled is destroyed without delay. Information that must be kept under applicable laws is stored separately from other data for the required period and then destroyed.</li>
+              <li>Information in electronic form is deleted in a way that cannot be recovered. We do not process personal information in paper form.</li>
+            </ul>
           </section>
 
           <section id="p4">
-            <h3>4. External Services and International Processing</h3>
-            <p>We use the services below to operate the app, and data may be processed outside Korea in connection with those services.</p>
+            <h3>4. Outsourcing and International Transfers</h3>
+            <p>Tadak does not provide personal information to third parties except where permitted by law or with your consent. To operate the service, we entrust the processing of personal information to the companies below, and in this process your information may be processed outside the Republic of Korea (mainly in the United States). This international transfer is based on Article 28-8(1)(3) of the Korean Personal Information Protection Act (outsourcing or storage necessary to perform our service contract with you, disclosed in this policy). Information is transmitted over an encrypted channel (HTTPS) at the time you use the service.</p>
+            <p>We review each recipient's data processing terms and privacy policies so that your personal information receives protection equal to or greater than that described in this policy.</p>
+
+            <h4>Supabase, Inc.</h4>
             <ul>
-              <li>Supabase: authentication, profile, record, UGC, report, feedback, and tracking_events storage</li>
-              <li>Firebase Analytics: analytics for app usage, sessions, practice, billing, and ad events</li>
-              <li>Google AdMob: ad delivery, ad performance measurement, and ad revenue aggregation</li>
-              <li>Google, Apple, and Kakao sign-in: authentication and account linking</li>
-              <li>Apple App Store and Google Play: purchase, restore, refund, and entitlement handling</li>
+              <li>Entrusted tasks: authentication, database and server operations</li>
+              <li>Information transferred: account, profile, records, content, purchase, and log information described in Section 1</li>
+              <li>Country of processing: Republic of Korea (data stored in the Asia Pacific (Seoul) region)</li>
+              <li>Retention: per Section 3</li>
+              <li>Contact: privacy@supabase.com</li>
             </ul>
-            <p>Because these providers operate global infrastructure, information may be processed on servers located outside Korea, including the United States and other jurisdictions used by the relevant provider.</p>
+            <h4>OpenAI, L.L.C.</h4>
+            <ul>
+              <li>Entrusted tasks: generating AI practice text; checking inputs and outputs for harmful content (moderation)</li>
+              <li>Information transferred: AI Writing input (Section 1-5) and generated text. User ID, email, and nickname are not sent.</li>
+              <li>Country of processing: United States</li>
+              <li>Retention: see "About our use of OpenAI" below</li>
+              <li>Contact: privacy@openai.com</li>
+            </ul>
+            <h4>Google LLC (Firebase Analytics, Firebase Crashlytics)</h4>
+            <ul>
+              <li>Entrusted tasks: usage analytics, crash reporting</li>
+              <li>Information transferred: information in Section 1-9</li>
+              <li>Country of processing: United States</li>
+              <li>Retention: Firebase Analytics follows the Google Analytics data retention setting (2 months by default, up to 14 months); Crashlytics crash reports follow Google's policy.</li>
+              <li>Contact: <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a></li>
+            </ul>
+            <h4>Google LLC (AdMob)</h4>
+            <ul>
+              <li>Entrusted tasks: serving and measuring ads, verifying rewarded ads</li>
+              <li>Information transferred: advertising identifier (if allowed in ATT), device information, approximate IP-based location, ad events</li>
+              <li>Country of processing: United States</li>
+              <li>Retention: per Google's policy</li>
+              <li>Contact: <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a></li>
+            </ul>
+            <h4>Google LLC, Apple Inc., Kakao Corp. (social sign-in)</h4>
+            <ul>
+              <li>Entrusted tasks: social sign-in authentication</li>
+              <li>Information transferred: sign-in request information</li>
+              <li>Country of processing: United States (Google, Apple), Republic of Korea (Kakao)</li>
+              <li>Retention: per each company's policy</li>
+              <li>Contact: <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a>, <a href="https://www.apple.com/legal/privacy/contact/">Apple privacy inquiries</a>, <a href="https://privacy.kakao.com">Kakao Privacy</a></li>
+            </ul>
+            <h4>Apple Inc., Google LLC (App Store, Google Play)</h4>
+            <ul>
+              <li>Entrusted tasks: payments, subscriptions, refunds</li>
+              <li>Information transferred: purchase and transaction information</li>
+              <li>Country of processing: United States</li>
+              <li>Retention: per each company's policy</li>
+              <li>Contact: <a href="https://www.apple.com/legal/privacy/contact/">Apple privacy inquiries</a>, <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a></li>
+            </ul>
+            <p>If you do not want your information transferred abroad, you can choose not to use the relevant features (AI Writing, social sign-in, in-app purchases, etc.) or request account deletion. In that case, those features will not be available. Transfers related to usage analytics, crash reporting, and ads happen by default while you use the app, so if you do not want them, please stop using and delete the app. You can refuse personalized ads through ATT on iOS or your Advertising ID settings on Android; non-personalized ads may still be shown.</p>
+
+            <div class="section-note">
+              <p><strong>About our use of OpenAI</strong></p>
+              <ul>
+                <li>The topic you choose in AI Writing or the situation description you enter (including relationship, tone, length, and any optional form of address or recipient name) and your weak-spot summary are sent to the OpenAI API to create practice text.</li>
+                <li>Inputs and generated text are checked for harmful content with the OpenAI Moderation API. If a threshold is exceeded, the text is not generated or not shown.</li>
+                <li>Tadak does not send account identifiers such as your user ID, email, or nickname to OpenAI.</li>
+                <li>Under OpenAI's API policy, data sent through the API is not used to train OpenAI models.</li>
+                <li>Tadak sends requests with response storage turned off (<code>store: false</code>). OpenAI retains data for up to 30 days for abuse monitoring and deletes it after that period (unless legally required to keep it).</li>
+                <li>The daily "Today's Text" and shared suggested topics are shared content that our server creates with OpenAI without any user information.</li>
+              </ul>
+            </div>
           </section>
 
           <section id="p5">
-            <h3>5. Ad Identifiers and ATT</h3>
+            <h3>5. Advertising Identifiers and ATT</h3>
             <ul>
-              <li>On iOS, we may record ATT pre-prompt behavior and authorization results before or after the system request.</li>
-              <li>Advertising identifiers or equivalent ad measurement data are used only within the limits allowed by the operating system, your settings, and applicable policy.</li>
-              <li>If you purchase ad removal, ad display can be limited in-app, and restore eligibility is checked against store purchase history.</li>
+              <li>The Tadak app does not use web cookies. Instead, app identifiers such as the advertising identifier and per-install anonymous ID described above may be used for ads and analytics.</li>
+              <li>On iOS, we may show an explainer screen before requesting App Tracking Transparency (ATT) permission, and we record whether it was shown and whether you allowed or denied tracking.</li>
+              <li>If you allow ATT, Google AdMob uses the advertising identifier (IDFA) for personalized ads and ad performance measurement. This counts as "tracking" under Apple's definition.</li>
+              <li>If you deny ATT, ads may still be shown, but without the advertising identifier. You can change this at any time in iOS <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>. On Android, you can delete or reset your advertising ID in your device's <strong>Settings &gt; Privacy (or Google) &gt; Ads</strong>.</li>
+              <li>Firebase Analytics data is not linked to Google Ads and is not used for advertising.</li>
+              <li>If you purchase Remove Ads or use Tadak Plus, ads in the app may be limited.</li>
             </ul>
           </section>
 
           <section id="p6">
-            <h3>6. Account Deletion and Post-Deletion Exceptions</h3>
+            <h3>6. Account Deletion and Exceptions</h3>
             <ul>
-              <li>In-app route: `Profile &gt; Account Management &gt; Delete`</li>
-              <li>Deletion targets include profile, practice records, private writings, community posts, likes, imports, post reports, hidden-author data, and certain legacy migration audit records directly tied to the account.</li>
-              <li>For guest usage, deleting the guest account removes the guest state and the writings or records tied to that account.</li>
-              <li>Separate analytics logs, in-app feedback, monetization logs, ATT or review events, user-report moderation logs, and app store purchase history may remain in pseudonymous, separated, or provider-side systems after account deletion.</li>
-              <li>Deleting your Tadak account does not automatically delete your Google, Apple, or Kakao account with that provider.</li>
+              <li>In-app path: <code>Profile &gt; Account Management &gt; Delete</code></li>
+              <li>Deleted data: data directly tied to your account, including profile, practice records, posts, AI-created text, public posts in the shared space, likes, imports, post report history, hide/block data, and login records in the authentication system</li>
+              <li>After deletion, analytics, feedback, ad, and payment operational logs, ATT/review events, user report moderation records, and app store purchase history may remain in anonymized form or separated from your account.</li>
+              <li>Closing or unlinking your account with an external sign-in provider (Google, Apple, Kakao) must be done separately in that provider's settings.</li>
             </ul>
           </section>
 
           <section id="p7">
             <h3>7. Your Rights and How to Exercise Them</h3>
             <ul>
-              <li>You may contact us about access, correction, deletion, or suspension of processing.</li>
-              <li>If you can access the app, please use the in-app account deletion flow first.</li>
-              <li>If you cannot access the app or need additional help, contact us by email.</li>
-              <li>See the <a href="./account-deletion.html">Account Deletion page</a> for deletion scope and the <a href="./community-policy.html">Community Policy</a> for reporting and moderation standards.</li>
+              <li>You may request access to, correction, deletion, or suspension of processing of your personal information, and withdraw your consent, at any time.</li>
+              <li>You can change your nickname and delete your account directly in the app.</li>
+              <li>For other requests, contact us at the email below and we will handle them without delay. Requests may also be made through a legal representative or an authorized agent.</li>
+              <li>See the <a href="./account-deletion.html">Account Deletion</a> page for what is deleted and the <a href="./community-policy.html">Community Policy</a> for moderation standards.</li>
             </ul>
           </section>
 
           <section id="p8">
             <h3>8. Security Measures</h3>
             <ul>
-              <li>We apply access controls, authentication management, transmission protection, and operational monitoring.</li>
-              <li>Operational access for reports, moderation, feedback review, and account deletion is limited to what is necessary.</li>
-              <li>We follow procedures to reduce impact and prevent recurrence if a security incident occurs.</li>
+              <li>We apply access control (row-level access policies), authentication management, encryption in transit (HTTPS), and review of operational logs.</li>
+              <li>Operational tasks such as reports and sanctions, feedback handling, and account deletion are accessed only to the extent necessary.</li>
+              <li>AI Writing input goes through contact-format blocking and harmful content checks, and the original input is not kept on our server.</li>
             </ul>
           </section>
 
           <section id="p9">
-            <h3>9. Policy Changes</h3>
-            <p>We will provide notice through public URLs or in-app notice before material changes to service integrations, retention standards, or processing scope take effect.</p>
+            <h3>9. Children's Personal Information</h3>
+            <ul>
+              <li>Tadak does not separately collect personal information targeting children under 14.</li>
+              <li>If we learn that personal information of a child under 14 was collected without the consent of a legal guardian, we will delete it without delay. A legal guardian may request access or deletion at the email below.</li>
+            </ul>
           </section>
 
           <section id="p10">
-            <h3>10. Privacy Contact and Related Links</h3>
+            <h3>10. Policy Changes</h3>
             <ul>
-              <li>Channel: OMILSOFT Privacy Team</li>
-              <li>Email: <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></li>
-              <li>Email requests are reviewed on business days in the order received.</li>
+              <li>If service features, external integrations, or retention standards change, we will notify you through an in-app notice or this page before the change takes effect.</li>
+              <li>This policy was announced on October 5, 2026 and takes effect on October 6, 2026.</li>
+              <li>Revision history: previous policy effective March 6, 2026</li>
             </ul>
+          </section>
+
+          <section id="p11">
+            <h3>11. Privacy Officer and Contact</h3>
+            <ul>
+              <li>Chief Privacy Officer: Jeong Dongcheon (Representative, OMILSOFT)</li>
+              <li>Email: <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></li>
+              <li>Email inquiries are reviewed and answered in the order received on business days.</li>
+            </ul>
+            <p>For reports or consultation about privacy violations, you may contact the following Korean authorities.</p>
+            <ul>
+              <li>Personal Information Infringement Report Center: privacy.kisa.or.kr, 118 (no area code)</li>
+              <li>Personal Information Dispute Mediation Committee: kopico.go.kr, 1833-6972</li>
+              <li>Supreme Prosecutors' Office: spo.go.kr, 1301 (no area code)</li>
+              <li>Korean National Police Agency: ecrm.police.go.kr, 182 (no area code)</li>
+            </ul>
+            <p>If the Korean and English versions differ, the Korean version prevails.</p>
             <div class="inline-links">
               <a href="./terms.html">Terms of Service</a>
               <a href="./support.html">Support</a>
@@ -219,14 +318,15 @@
             <h4>On This Page</h4>
             <a href="#p1">1. Personal Information We Process</a>
             <a href="#p2">2. Purposes of Use</a>
-            <a href="#p3">3. Retention and Deletion</a>
-            <a href="#p4">4. External Services and International Processing</a>
+            <a href="#p3">3. Retention and Destruction</a>
+            <a href="#p4">4. Outsourcing and International Transfers</a>
             <a href="#p5">5. Ad Identifiers and ATT</a>
             <a href="#p6">6. Account Deletion and Exceptions</a>
             <a href="#p7">7. Your Rights</a>
             <a href="#p8">8. Security Measures</a>
-            <a href="#p9">9. Policy Changes</a>
-            <a href="#p10">10. Privacy Contact</a>
+            <a href="#p9">9. Children's Information</a>
+            <a href="#p10">10. Policy Changes</a>
+            <a href="#p11">11. Privacy Officer and Contact</a>
             <div class="contact-box">Contact: omilsoft@gmail.com</div>
             <div class="toc-group">
               <div class="toc-label">Quick Links</div>
