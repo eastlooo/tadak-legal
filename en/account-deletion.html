@@ -13,34 +13,39 @@
     <meta property="og:image:alt" content="Tadak Legal Hub share image" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
-    <meta name="theme-color" content="#231a35" />
-    <link rel="stylesheet" href="../styles.css?v=20260307-legal-1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/app/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/app/favicon-64.png" />
+    <link rel="apple-touch-icon" href="../assets/app/apple-touch-icon.png" />
+    <meta name="color-scheme" content="light dark" />
+    <script>document.documentElement.classList.add("js")</script>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbf9f8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141112" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="../assets/site.css?v=20261005-premium-4" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="shell topbar-inner">
-        <a class="brand" href="./index.html">
-          <span class="brand-badge" aria-hidden="true"></span>
-          <span class="brand-text">Tadak Legal Hub</span>
-        </a>
-        <div class="nav-wrap">
-          <nav class="nav" aria-label="primary">
-            <a href="./index.html">Hub</a>
-            <a href="./terms.html">Terms</a>
-            <a href="./privacy.html">Privacy</a>
-            <a href="./support.html">Support</a>
-            <a class="active" href="./account-deletion.html">Deletion</a>
-            <a href="./community-policy.html">Community</a>
-          </nav>
-          <div class="lang-switch" aria-label="language switch">
-            <a href="../account-deletion.html">KO</a>
-            <a class="active" href="./account-deletion.html">EN</a>
-          </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="./index.html" aria-label="Tadak home"><span lang="ko">타닥타닥</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Documents">
+          <a href="./index.html">Home</a>
+          <a href="./privacy.html">Privacy</a>
+          <a href="./terms.html">Terms</a>
+          <a href="./support.html">Support</a>
+          <a href="./account-deletion.html" aria-current="page">Account deletion</a>
+          <a href="./community-policy.html">Community</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="../account-deletion.html" lang="ko" hreflang="ko">한국어</a>
+          <a href="./account-deletion.html" lang="en" hreflang="en" aria-current="true">English</a>
         </div>
       </div>
     </header>
 
-    <main class="shell">
+    <main id="main" class="shell doc-main">
       <section class="hero">
         <div class="hero-card">
           <div class="eyebrow">Google Play Data Deletion URL</div>
@@ -54,6 +59,23 @@
       </section>
 
       <div class="layout">
+
+        <aside class="aside">
+          <nav class="toc" aria-label="account deletion table of contents">
+            <details class="toc-details" open>
+              <summary>On This Page</summary>
+              <div class="toc-body">
+            <a href="#s1">1. How to Request Deletion</a>
+            <a href="#s2">2. Data Deleted</a>
+            <a href="#s3">3. Data That May Remain</a>
+            <a href="#s4">4. Guest Account Deletion</a>
+            <a href="#s5">5. Handling Flow and Notes</a>
+            <a href="#s6">6. Related Documents and Contact</a>
+            <div class="contact-box">Contact: omilsoft@gmail.com</div>
+              </div>
+            </details>
+          </nav>
+        </aside>
         <article class="content">
           <div class="summary">
             <h2>Quick Summary</h2>
@@ -65,7 +87,7 @@
           </div>
 
           <section id="s1">
-            <h3>1. How to Request Deletion</h3>
+            <h2>1. How to Request Deletion<a class="anchor" href="#s1" aria-label="Link to this section" data-added></a></h2>
             <ol class="step-list">
               <li>Open the Tadak app.</li>
               <li>Go to `Profile &gt; Account Management`.</li>
@@ -78,7 +100,7 @@
           </section>
 
           <section id="s2">
-            <h3>2. Data Deleted with the Account</h3>
+            <h2>2. Data Deleted with the Account<a class="anchor" href="#s2" aria-label="Link to this section" data-added></a></h2>
             <ul class="link-list">
               <li>Profile data, nickname, and settings</li>
               <li>Practice records and rank-related data</li>
@@ -90,7 +112,7 @@
           </section>
 
           <section id="s3">
-            <h3>3. Data That May Remain After Deletion</h3>
+            <h2>3. Data That May Remain After Deletion<a class="anchor" href="#s3" aria-label="Link to this section" data-added></a></h2>
             <ul class="link-list">
               <li>tracking_events may remain only after user_id, anonymous_id, session_id, and other account identifiers are removed and identifier fields inside payload are redacted.</li>
               <li>In-app feedback and bug reports may remain only after user_id is removed, the message is replaced with a deleted-account placeholder, and identifier fields in metadata are redacted.</li>
@@ -102,7 +124,7 @@
           </section>
 
           <section id="s4">
-            <h3>4. Guest Account Deletion</h3>
+            <h2>4. Guest Account Deletion<a class="anchor" href="#s4" aria-label="Link to this section" data-added></a></h2>
             <ul class="link-list">
               <li>Deleting a guest account removes the guest state together with writings and records tied to that guest account.</li>
               <li>Guest accounts cannot publish publicly in the community feed. Public sharing requires account linking first.</li>
@@ -110,7 +132,7 @@
           </section>
 
           <section id="s5">
-            <h3>5. Handling Flow and Important Notes</h3>
+            <h2>5. Handling Flow and Important Notes<a class="anchor" href="#s5" aria-label="Link to this section" data-added></a></h2>
             <ul class="link-list">
               <li>After final confirmation in the app, deletion is executed immediately and cannot be reversed.</li>
               <li>Email requests are reviewed on business days in the order received.</li>
@@ -119,7 +141,7 @@
           </section>
 
           <section id="s6">
-            <h3>6. Related Documents and Contact</h3>
+            <h2>6. Related Documents and Contact<a class="anchor" href="#s6" aria-label="Link to this section" data-added></a></h2>
             <p><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></p>
             <div class="inline-links">
               <a href="./support.html">Support</a>
@@ -128,24 +150,71 @@
             </div>
           </section>
         </article>
-
-        <aside class="aside">
-          <nav class="toc" aria-label="account deletion table of contents">
-            <h4>On This Page</h4>
-            <a href="#s1">1. How to Request Deletion</a>
-            <a href="#s2">2. Data Deleted</a>
-            <a href="#s3">3. Data That May Remain</a>
-            <a href="#s4">4. Guest Account Deletion</a>
-            <a href="#s5">5. Handling Flow and Notes</a>
-            <a href="#s6">6. Related Documents and Contact</a>
-            <div class="contact-box">Contact: omilsoft@gmail.com</div>
-          </nav>
-        </aside>
       </div>
     </main>
 
-    <footer class="shell foot">
-      © 2026 OMILSOFT. All rights reserved.
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="wordmark" lang="ko">타닥타닥</span>
+          <p>Korean typing practice, from quick replies to work emails.</p>
+        </div>
+        <nav class="footer-links" aria-label="Policies and support">
+            <a href="./privacy.html">Privacy</a>
+            <a href="./terms.html">Terms</a>
+            <a href="./support.html">Support</a>
+            <a href="./account-deletion.html">Account deletion</a>
+            <a href="./community-policy.html">Community</a>
+            <a href="./operator-info.html">Operator info</a>
+            <a href="./download.html">Download</a>
+        </nav>
+        <div class="footer-meta">
+          <dl class="footer-operator">
+            <div><dt>Business</dt><dd>OMILSOFT</dd></div>
+            <div><dt>Representative</dt><dd>Jeong Dongcheon</dd></div>
+            <div><dt>Registration No.</dt><dd>766-11-02666</dd></div>
+            <div><dt>Address</dt><dd>Sangdo-dong, Dongjak-gu, Seoul</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></dd></div>
+          </dl>
+          <p class="copyright">© 2026 OMILSOFT. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
+    <script>
+(function () {
+  var d = document.querySelector('.toc-details');
+  if (!d) return;
+  var mq = window.matchMedia('(min-width: 1024px)');
+  function sync() { if (mq.matches) d.open = true; }
+  if (!mq.matches) d.open = false;
+  mq.addEventListener ? mq.addEventListener('change', sync) : mq.addListener(sync);
+  d.addEventListener('click', function (e) {
+    if (e.target.closest('a[href^="#"]') && !mq.matches) d.open = false;
+  });
+  var links = Array.prototype.slice.call(d.querySelectorAll('a[href^="#"]'));
+  if (!('IntersectionObserver' in window) || !links.length) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      links.forEach(function (a) { a.removeAttribute('aria-current'); });
+      var a = map[en.target.id];
+      if (a) a.setAttribute('aria-current', 'location');
+    });
+  }, { rootMargin: '-15% 0px -70% 0px' });
+  Object.keys(map).forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
+})();
+</script>
+    <script>
+(function () {
+  var b = document.querySelector('.nav-toggle'), h = document.querySelector('.site-header');
+  if (!b || !h) return;
+  function set(open) { h.classList.toggle('nav-open', open); b.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+  b.addEventListener('click', function () { set(b.getAttribute('aria-expanded') !== 'true'); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+  document.querySelectorAll('.site-nav a').forEach(function (a) { a.addEventListener('click', function () { set(false); }); });
+})();
+</script>
   </body>
 </html>
