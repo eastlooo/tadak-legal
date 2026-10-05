@@ -112,6 +112,13 @@ def extract(path):
     }
 
 
+# Intentional, documented exceptions (non-legal marketing metadata only).
+EXEMPT = {
+    ("index.html", "title"): "landing page <title> renamed for the product landing",
+    ("en/index.html", "title"): "landing page <title> renamed for the product landing",
+}
+
+
 def main():
     before, after = Path(sys.argv[1]), Path(sys.argv[2])
     pages = sorted(str(p.relative_to(before)) for p in before.rglob("*.html") if ".git" not in p.parts)
@@ -121,6 +128,9 @@ def main():
         b, a = extract(before / rel), extract(after / rel)
         page_ok = True
         for key in b:
+            if (rel, key) in EXEMPT:
+                print(f"     exempt {rel} [{key}]: {EXEMPT[(rel, key)]} ({b[key][0]!r} -> {a[key][0]!r})")
+                continue
             if b[key] != a[key]:
                 page_ok = ok = False
                 print(f"--- MISMATCH {rel} [{key}]")
