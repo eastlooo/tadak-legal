@@ -10,39 +10,39 @@
     <meta property="og:image:alt" content="Tadak Legal Hub 공유 이미지" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
-    <meta name="theme-color" content="#231a35" />
-    <link rel="stylesheet" href="./styles.css?v=20260307-legal-1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbf9f8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141112" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="./assets/site.css?v=20261005-premium-1" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="shell topbar-inner">
-        <a class="brand" href="./index.html">
-          <span class="brand-badge" aria-hidden="true"></span>
-          <span class="brand-text">Tadak Legal Hub</span>
-        </a>
-        <div class="nav-wrap">
-          <nav class="nav" aria-label="primary">
-            <a href="./index.html">Hub</a>
-            <a href="./terms.html">Terms</a>
-            <a href="./privacy.html">Privacy</a>
-            <a class="active" href="./support.html">Support</a>
-            <a href="./account-deletion.html">Deletion</a>
-            <a href="./community-policy.html">Community</a>
-          </nav>
-          <div class="lang-switch" aria-label="language switch">
-            <a class="active" href="./support.html">KO</a>
-            <a href="./en/support.html">EN</a>
-          </div>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="./index.html" aria-label="타닥타닥 홈"><span lang="ko">타닥타닥</span></a>
+        <nav class="site-nav" aria-label="문서">
+          <a href="./index.html">홈</a>
+          <a href="./privacy.html">개인정보처리방침</a>
+          <a href="./terms.html">이용약관</a>
+          <a href="./support.html" aria-current="page">지원</a>
+          <a href="./account-deletion.html">계정 삭제</a>
+          <a href="./community-policy.html">커뮤니티 정책</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="언어 선택">
+          <a href="./support.html" lang="ko" hreflang="ko" aria-current="true">한국어</a>
+          <a href="./en/support.html" lang="en" hreflang="en">English</a>
         </div>
       </div>
     </header>
 
-    <main class="shell">
-      <section class="hero">
+    <main id="main" class="shell doc-main">
+      <section class="hero hero--swap">
         <div class="hero-card">
           <div class="eyebrow">OMILSOFT</div>
-          <h1>Tadak Support</h1>
-          <p class="hero-sub">타닥타닥 지원 안내</p>
+          <p class="hero-label">Tadak Support</p>
+          <h1 class="hero-sub">타닥타닥 지원 안내</h1>
           <div class="meta">
             <span class="chip">Published: 2026-03-06</span>
             <span class="chip">Primary Contact: omilsoft@gmail.com</span>
@@ -51,6 +51,21 @@
       </section>
 
       <div class="layout">
+
+        <aside class="aside">
+          <nav class="toc" aria-label="support table of contents">
+            <details class="toc-details" open>
+              <summary>On This Page</summary>
+              <div class="toc-body">
+            <a href="#s1">1. 지원 채널</a>
+            <a href="#s2">2. 문의 유형별 안내</a>
+            <a href="#s3">3. 운영 기준</a>
+            <a href="#s4">4. 관련 문서</a>
+            <div class="contact-box">Contact: omilsoft@gmail.com</div>
+              </div>
+            </details>
+          </nav>
+        </aside>
         <article class="content">
           <div class="summary">
             <h2>Quick Summary</h2>
@@ -62,7 +77,7 @@
           </div>
 
           <section id="s1">
-            <h3>1. 지원 채널</h3>
+            <h2>1. 지원 채널<a class="anchor" href="#s1" aria-label="이 섹션으로 연결되는 링크" data-added></a></h2>
             <div class="support-box">
               <h3>이메일</h3>
               <p><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></p>
@@ -71,7 +86,7 @@
           </section>
 
           <section id="s2">
-            <h3>2. 문의 유형별 안내</h3>
+            <h2>2. 문의 유형별 안내<a class="anchor" href="#s2" aria-label="이 섹션으로 연결되는 링크" data-added></a></h2>
             <ul class="link-list">
               <li>계정 삭제: 앱 내 `프로필 &gt; 계정 관리 &gt; 삭제하기` 우선 이용</li>
               <li>커뮤니티 신고/제재: 계정 식별 정보, 게시물 제목 또는 신고 시점, 사용자 신고 여부, 문의 내용을 함께 전달</li>
@@ -81,7 +96,7 @@
           </section>
 
           <section id="s3">
-            <h3>3. 운영 기준</h3>
+            <h2>3. 운영 기준<a class="anchor" href="#s3" aria-label="이 섹션으로 연결되는 링크" data-added></a></h2>
             <ul class="link-list">
               <li>이메일 문의는 영업일 기준 순차적으로 검토하고 회신합니다.</li>
               <li>계정 삭제, 개인정보, 신고·제재, 결제 문의 채널은 `omilsoft@gmail.com` 으로 통일합니다.</li>
@@ -90,7 +105,7 @@
           </section>
 
           <section id="s4">
-            <h3>4. 관련 문서</h3>
+            <h2>4. 관련 문서<a class="anchor" href="#s4" aria-label="이 섹션으로 연결되는 링크" data-added></a></h2>
             <div class="inline-links">
               <a href="./privacy.html">개인정보처리방침</a>
               <a href="./terms.html">이용약관</a>
@@ -100,22 +115,66 @@
             </div>
           </section>
         </article>
-
-        <aside class="aside">
-          <nav class="toc" aria-label="support table of contents">
-            <h4>On This Page</h4>
-            <a href="#s1">1. 지원 채널</a>
-            <a href="#s2">2. 문의 유형별 안내</a>
-            <a href="#s3">3. 운영 기준</a>
-            <a href="#s4">4. 관련 문서</a>
-            <div class="contact-box">Contact: omilsoft@gmail.com</div>
-          </nav>
-        </aside>
       </div>
     </main>
 
-    <footer class="shell foot">
-      © 2026 OMILSOFT. All rights reserved.
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="wordmark" lang="ko">타닥타닥</span>
+          <p>답장도, 업무 메일도 손에 익도록.</p>
+        </div>
+        <nav class="footer-links" aria-label="정책 및 지원">
+            <a href="./privacy.html">개인정보처리방침</a>
+            <a href="./terms.html">이용약관</a>
+            <a href="./support.html">지원</a>
+            <a href="./account-deletion.html">계정 삭제</a>
+            <a href="./community-policy.html">커뮤니티 정책</a>
+            <a href="./operator-info.html">사업자/운영자 정보</a>
+        </nav>
+        <div class="footer-meta">
+          <dl class="footer-operator">
+            <div><dt>상호</dt><dd>오밀소프트 (OMILSOFT)</dd></div>
+            <div><dt>대표</dt><dd>정동천</dd></div>
+            <div><dt>사업자등록번호</dt><dd>766-11-02666</dd></div>
+            <div><dt>소재지</dt><dd>서울특별시 동작구 상도동</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></dd></div>
+          </dl>
+          <p class="copyright">© 2026 OMILSOFT. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
+    <script>
+(function () {
+  var d = document.querySelector('.toc-details');
+  if (!d) return;
+  var mq = window.matchMedia('(min-width: 1024px)');
+  function sync() { if (mq.matches) d.open = true; }
+  if (!mq.matches) d.open = false;
+  mq.addEventListener ? mq.addEventListener('change', sync) : mq.addListener(sync);
+  d.addEventListener('click', function (e) {
+    if (e.target.closest('a[href^="#"]') && !mq.matches) d.open = false;
+  });
+  var links = Array.prototype.slice.call(d.querySelectorAll('a[href^="#"]'));
+  if (!('IntersectionObserver' in window) || !links.length) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      links.forEach(function (a) { a.removeAttribute('aria-current'); });
+      var a = map[en.target.id];
+      if (a) a.setAttribute('aria-current', 'location');
+    });
+  }, { rootMargin: '-15% 0px -70% 0px' });
+  Object.keys(map).forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
+})();
+</script>
+    <script>
+(function () {
+  var nav = document.querySelector('.site-nav'), cur = nav && nav.querySelector('[aria-current]');
+  if (cur && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = cur.offsetLeft - (nav.clientWidth - cur.offsetWidth) / 2;
+})();
+</script>
   </body>
 </html>

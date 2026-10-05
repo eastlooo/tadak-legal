@@ -13,34 +13,34 @@
     <meta property="og:image:alt" content="Tadak Legal Hub share image" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://eastlooo.github.io/tadak-legal/assets/tadak-legal-og.png" />
-    <meta name="theme-color" content="#231a35" />
-    <link rel="stylesheet" href="../styles.css?v=20260307-legal-1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbf9f8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141112" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="../assets/site.css?v=20261005-premium-1" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="shell topbar-inner">
-        <a class="brand" href="./index.html">
-          <span class="brand-badge" aria-hidden="true"></span>
-          <span class="brand-text">Tadak Legal Hub</span>
-        </a>
-        <div class="nav-wrap">
-          <nav class="nav" aria-label="primary">
-            <a href="./index.html">Hub</a>
-            <a href="./terms.html">Terms</a>
-            <a class="active" href="./privacy.html">Privacy</a>
-            <a href="./support.html">Support</a>
-            <a href="./account-deletion.html">Deletion</a>
-            <a href="./community-policy.html">Community</a>
-          </nav>
-          <div class="lang-switch" aria-label="language switch">
-            <a href="../privacy.html">KO</a>
-            <a class="active" href="./privacy.html">EN</a>
-          </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="./index.html" aria-label="Tadak home"><span lang="ko">타닥타닥</span></a>
+        <nav class="site-nav" aria-label="Documents">
+          <a href="./index.html">Home</a>
+          <a href="./privacy.html" aria-current="page">Privacy</a>
+          <a href="./terms.html">Terms</a>
+          <a href="./support.html">Support</a>
+          <a href="./account-deletion.html">Account deletion</a>
+          <a href="./community-policy.html">Community</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="../privacy.html" lang="ko" hreflang="ko">한국어</a>
+          <a href="./privacy.html" lang="en" hreflang="en" aria-current="true">English</a>
         </div>
       </div>
     </header>
 
-    <main class="shell">
+    <main id="main" class="shell doc-main">
       <section class="hero">
         <div class="hero-card">
           <div class="eyebrow">OMILSOFT</div>
@@ -54,6 +54,33 @@
       </section>
 
       <div class="layout">
+
+        <aside class="aside">
+          <nav class="toc" aria-label="privacy table of contents">
+            <details class="toc-details" open>
+              <summary>On This Page</summary>
+              <div class="toc-body">
+            <a href="#p1">1. Personal Information We Process</a>
+            <a href="#p2">2. Purposes of Use</a>
+            <a href="#p3">3. Retention and Destruction</a>
+            <a href="#p4">4. Outsourcing and International Transfers</a>
+            <a href="#p5">5. Ad Identifiers and ATT</a>
+            <a href="#p6">6. Account Deletion and Exceptions</a>
+            <a href="#p7">7. Your Rights</a>
+            <a href="#p8">8. Security Measures</a>
+            <a href="#p9">9. Children's Information</a>
+            <a href="#p10">10. Policy Changes</a>
+            <a href="#p11">11. Privacy Officer and Contact</a>
+            <div class="contact-box">Contact: omilsoft@gmail.com</div>
+            <div class="toc-group">
+              <div class="toc-label">Quick Links</div>
+              <a href="./account-deletion.html">Account Deletion</a>
+              <a href="./community-policy.html">Community Policy</a>
+            </div>
+              </div>
+            </details>
+          </nav>
+        </aside>
         <article class="content">
           <div class="summary">
             <h2>Quick Summary</h2>
@@ -67,9 +94,9 @@
           </div>
 
           <section id="p1">
-            <h3>1. Personal Information We Process</h3>
+            <h2>1. Personal Information We Process<a class="anchor" href="#p1" aria-label="Link to this section" data-added></a></h2>
             <p>Tadak does not use a separate sign-up form. The information below is collected through social sign-in, through your use of the app, and from what you enter directly.</p>
-            <h4>1-1. Account and login information</h4>
+            <h3 class="sub">1-1. Account and login information</h3>
             <ul>
               <li>Internal user identifier (UUID), guest status, login status</li>
               <li>Social sign-in provider information: provider name (Google, Apple, Kakao), provider user identifier, email address (if provided)</li>
@@ -78,23 +105,23 @@
             <div class="section-note">
               <p><strong>Information not stored in your service profile</strong>: Your real name and profile photo, which a provider may send during social sign-in, are not stored in Tadak's service data (your profile). Sign in with Apple on iOS does not request your name. However, when Google or Kakao include your name and photo URL in the authentication token, this information (name, profile photo URL) is kept in the login record of our authentication system (Supabase Auth). It is not used for any service feature such as app screens, rankings, or the community, and it is deleted when you delete your account.</p>
             </div>
-            <h4>1-2. Profile and app settings</h4>
+            <h3 class="sub">1-2. Profile and app settings</h3>
             <ul>
               <li>Nickname, nickname tag, preferred theme, font, font size, language setting</li>
             </ul>
-            <h4>1-3. Typing practice and learning records</h4>
+            <h3 class="sub">1-3. Typing practice and learning records</h3>
             <ul>
               <li>Practice records (typing speed, accuracy, practice time, keyboard type, content practiced), ranking scores, practice streaks, mission and achievement history, transcription (e.g., Bible) progress</li>
               <li>Weak-spot summary (frequently missed letter, final consonant, and spacing patterns and their error rates). Weak-spot analysis is calculated on your device, and only summary figures are sent to our server.</li>
             </ul>
-            <h4>1-4. User content</h4>
+            <h3 class="sub">1-4. User content</h3>
             <ul>
               <li>Title, body, author name, language, and visibility of text you write</li>
               <li>Text created with AI Writing (title, body) and whether it was saved</li>
               <li>Posts published to the shared space ("Everyone's Space"), public/hidden status, quality score, report count, moderation notes</li>
               <li>Likes, imports, sharing history, and your list of hidden/blocked authors</li>
             </ul>
-            <h4>1-5. AI Writing input</h4>
+            <h3 class="sub">1-5. AI Writing input</h3>
             <ul>
               <li>A topic chosen from suggestions or a topic you enter yourself</li>
               <li>"My real-life text" input: your relationship with the recipient, tone, length, situation description, (messenger) how you address the other person or their name (optional), (email) recipient's name and title (optional), purpose</li>
@@ -102,19 +129,19 @@
               <li>We do not store the original input on our server. We only store a hash (a value transformed so the original cannot be recovered) to detect duplicate requests.</li>
               <li>Input in contact-information formats, such as phone numbers, email addresses, and links, is not accepted. Please do not include real personal information (real names, contact details, addresses, etc.) in situation descriptions.</li>
             </ul>
-            <h4>1-6. Reports and feedback</h4>
+            <h3 class="sub">1-6. Reports and feedback</h3>
             <ul>
               <li>Post reports: reporter identifier, reported post identifier, reason, time of report</li>
               <li>User reports: reporter and reported user identifiers, related post identifier, reason, time of report, snapshot of the reported content</li>
               <li>In-app feedback and bug reports: content, category, submission path, platform, app version, submission time, user identifier (if signed in)</li>
             </ul>
-            <h4>1-7. Purchases and passes</h4>
+            <h3 class="sub">1-7. Purchases and passes</h3>
             <ul>
               <li>Product IDs for Remove Ads, Tadak Plus (subscription), and AI generation passes; transaction identifiers; purchase/restore/renewal/refund status; store error codes</li>
               <li>History of generation passes (tickets) granted, used, and expired, including passes granted for watching rewarded ads</li>
               <li>Payment methods (such as card numbers) are handled by Apple and Google; Tadak does not receive them.</li>
             </ul>
-            <h4>1-8. Ads and advertising identifiers</h4>
+            <h3 class="sub">1-8. Ads and advertising identifiers</h3>
             <ul>
               <li>Ad impression, click, and reward events; ad placement information</li>
               <li>Rewarded ad verification (SSV): only a single-use token issued by our server is included in the ad network's callback; your user ID and posts are not included.</li>
@@ -122,7 +149,7 @@
               <li>Advertising identifiers: on iOS, the IDFA is used by Google AdMob for personalized ads and ad measurement only if you allow it in ATT. On Android, the Advertising ID is used by Google AdMob to serve and measure ads, subject to your device's ad settings (deleting or resetting the Advertising ID).</li>
               <li>Google AdMob may process approximate location inferred from your IP address and device and performance information to serve ads.</li>
             </ul>
-            <h4>1-9. Usage analytics and crash information</h4>
+            <h3 class="sub">1-9. Usage analytics and crash information</h3>
             <ul>
               <li>Firebase Analytics and Supabase event records: app launches, sessions, practice start/finish, feature use, experiment exposure, ad and purchase events</li>
               <li>Per-install anonymous ID (anonymous_id), user ID, session ID, platform, app version</li>
@@ -131,7 +158,7 @@
           </section>
 
           <section id="p2">
-            <h3>2. Purposes of Use</h3>
+            <h2>2. Purposes of Use<a class="anchor" href="#p2" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>Identifying members, keeping you signed in, converting guest/social accounts, and linking accounts</li>
               <li>Saving typing practice records and providing rankings, missions, achievements, and transcription records</li>
@@ -146,8 +173,8 @@
           </section>
 
           <section id="p3">
-            <h3>3. Retention and Destruction</h3>
-            <h4>3-1. Retention periods</h4>
+            <h2>3. Retention and Destruction<a class="anchor" href="#p3" aria-label="Link to this section" data-added></a></h2>
+            <h3 class="sub">3-1. Retention periods</h3>
             <ul>
               <li>Account, profile, practice records, posts, AI-created text, public posts, likes/imports, and hide/block data are kept while your account exists and deleted when you delete your account.</li>
               <li>We do not store the original AI Writing input on our server. See Section 4 for OpenAI's retention.</li>
@@ -156,7 +183,7 @@
               <li>Purchase, subscription, and refund records are kept under the Korean Act on the Consumer Protection in Electronic Commerce for the following periods: records of contracts or withdrawal of offers, 5 years; records of payment and supply of goods, 5 years; records of consumer complaints or dispute resolution, 3 years.</li>
               <li>Text you enter in feedback or report reasons may be kept exactly as submitted, so please do not include sensitive information.</li>
             </ul>
-            <h4>3-2. Destruction procedure and method</h4>
+            <h3 class="sub">3-2. Destruction procedure and method</h3>
             <ul>
               <li>Personal information whose retention period has ended or whose purpose has been fulfilled is destroyed without delay. Information that must be kept under applicable laws is stored separately from other data for the required period and then destroyed.</li>
               <li>Information in electronic form is deleted in a way that cannot be recovered. We do not process personal information in paper form.</li>
@@ -164,11 +191,11 @@
           </section>
 
           <section id="p4">
-            <h3>4. Outsourcing and International Transfers</h3>
+            <h2>4. Outsourcing and International Transfers<a class="anchor" href="#p4" aria-label="Link to this section" data-added></a></h2>
             <p>Tadak does not provide personal information to third parties except where permitted by law or with your consent. To operate the service, we entrust the processing of personal information to the companies below, and in this process your information may be processed outside the Republic of Korea (mainly in the United States). This international transfer is based on Article 28-8(1)(3) of the Korean Personal Information Protection Act (outsourcing or storage necessary to perform our service contract with you, disclosed in this policy). Information is transmitted over an encrypted channel (HTTPS) at the time you use the service.</p>
             <p>We review each recipient's data processing terms and privacy policies so that your personal information receives protection equal to or greater than that described in this policy.</p>
 
-            <h4>Supabase, Inc.</h4>
+            <h3 class="sub">Supabase, Inc.</h3>
             <ul>
               <li>Entrusted tasks: authentication, database and server operations</li>
               <li>Information transferred: account, profile, records, content, purchase, and log information described in Section 1</li>
@@ -176,7 +203,7 @@
               <li>Retention: per Section 3</li>
               <li>Contact: privacy@supabase.com</li>
             </ul>
-            <h4>OpenAI, L.L.C.</h4>
+            <h3 class="sub">OpenAI, L.L.C.</h3>
             <ul>
               <li>Entrusted tasks: generating AI practice text; checking inputs and outputs for harmful content (moderation)</li>
               <li>Information transferred: AI Writing input (Section 1-5) and generated text. User ID, email, and nickname are not sent.</li>
@@ -184,7 +211,7 @@
               <li>Retention: see "About our use of OpenAI" below</li>
               <li>Contact: privacy@openai.com</li>
             </ul>
-            <h4>Google LLC (Firebase Analytics, Firebase Crashlytics)</h4>
+            <h3 class="sub">Google LLC (Firebase Analytics, Firebase Crashlytics)</h3>
             <ul>
               <li>Entrusted tasks: usage analytics, crash reporting</li>
               <li>Information transferred: information in Section 1-9</li>
@@ -192,7 +219,7 @@
               <li>Retention: Firebase Analytics data is kept for 14 months from collection and then deleted; Crashlytics crash reports follow Google's policy.</li>
               <li>Contact: <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a></li>
             </ul>
-            <h4>Google LLC (AdMob)</h4>
+            <h3 class="sub">Google LLC (AdMob)</h3>
             <ul>
               <li>Entrusted tasks: serving and measuring ads, verifying rewarded ads</li>
               <li>Information transferred: advertising identifier (if allowed in ATT), device information, approximate IP-based location, ad events</li>
@@ -200,7 +227,7 @@
               <li>Retention: per Google's policy</li>
               <li>Contact: <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a></li>
             </ul>
-            <h4>Google LLC, Apple Inc., Kakao Corp. (social sign-in)</h4>
+            <h3 class="sub">Google LLC, Apple Inc., Kakao Corp. (social sign-in)</h3>
             <ul>
               <li>Entrusted tasks: social sign-in authentication</li>
               <li>Information transferred: sign-in request information</li>
@@ -208,7 +235,7 @@
               <li>Retention: per each company's policy</li>
               <li>Contact: <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a>, <a href="https://www.apple.com/legal/privacy/contact/">Apple privacy inquiries</a>, <a href="https://privacy.kakao.com">Kakao Privacy</a></li>
             </ul>
-            <h4>Apple Inc., Google LLC (App Store, Google Play)</h4>
+            <h3 class="sub">Apple Inc., Google LLC (App Store, Google Play)</h3>
             <ul>
               <li>Entrusted tasks: payments, subscriptions, refunds</li>
               <li>Information transferred: purchase and transaction information</li>
@@ -232,7 +259,7 @@
           </section>
 
           <section id="p5">
-            <h3>5. Advertising Identifiers and ATT</h3>
+            <h2>5. Advertising Identifiers and ATT<a class="anchor" href="#p5" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>The Tadak app does not use web cookies. Instead, app identifiers such as the advertising identifier and per-install anonymous ID described above may be used for ads and analytics.</li>
               <li>On iOS, we may show an explainer screen before requesting App Tracking Transparency (ATT) permission, and we record whether it was shown and whether you allowed or denied tracking.</li>
@@ -244,7 +271,7 @@
           </section>
 
           <section id="p6">
-            <h3>6. Account Deletion and Exceptions</h3>
+            <h2>6. Account Deletion and Exceptions<a class="anchor" href="#p6" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>In-app path: <code>Profile &gt; Account Management &gt; Delete</code></li>
               <li>Deleted data: data directly tied to your account, including profile, practice records, posts, AI-created text, public posts in the shared space, likes, imports, post report history, hide/block data, and login records in the authentication system</li>
@@ -254,7 +281,7 @@
           </section>
 
           <section id="p7">
-            <h3>7. Your Rights and How to Exercise Them</h3>
+            <h2>7. Your Rights and How to Exercise Them<a class="anchor" href="#p7" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>You may request access to, correction, deletion, or suspension of processing of your personal information, and withdraw your consent, at any time.</li>
               <li>You can change your nickname and delete your account directly in the app.</li>
@@ -264,7 +291,7 @@
           </section>
 
           <section id="p8">
-            <h3>8. Security Measures</h3>
+            <h2>8. Security Measures<a class="anchor" href="#p8" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>We apply access control (row-level access policies), authentication management, encryption in transit (HTTPS), and review of operational logs.</li>
               <li>Operational tasks such as reports and sanctions, feedback handling, and account deletion are accessed only to the extent necessary.</li>
@@ -273,7 +300,7 @@
           </section>
 
           <section id="p9">
-            <h3>9. Children's Personal Information</h3>
+            <h2>9. Children's Personal Information<a class="anchor" href="#p9" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>Tadak does not separately collect personal information targeting children under 14.</li>
               <li>If we learn that personal information of a child under 14 was collected without the consent of a legal guardian, we will delete it without delay. A legal guardian may request access or deletion at the email below.</li>
@@ -281,7 +308,7 @@
           </section>
 
           <section id="p10">
-            <h3>10. Policy Changes</h3>
+            <h2>10. Policy Changes<a class="anchor" href="#p10" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>If service features, external integrations, or retention standards change, we will notify you through an in-app notice or this page before the change takes effect.</li>
               <li>This policy was announced on October 5, 2026 and takes effect on October 6, 2026.</li>
@@ -290,7 +317,7 @@
           </section>
 
           <section id="p11">
-            <h3>11. Privacy Officer and Contact</h3>
+            <h2>11. Privacy Officer and Contact<a class="anchor" href="#p11" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>Chief Privacy Officer: Jeong Dongcheon (Representative, OMILSOFT)</li>
               <li>Email: <a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></li>
@@ -312,34 +339,66 @@
             </div>
           </section>
         </article>
-
-        <aside class="aside">
-          <nav class="toc" aria-label="privacy table of contents">
-            <h4>On This Page</h4>
-            <a href="#p1">1. Personal Information We Process</a>
-            <a href="#p2">2. Purposes of Use</a>
-            <a href="#p3">3. Retention and Destruction</a>
-            <a href="#p4">4. Outsourcing and International Transfers</a>
-            <a href="#p5">5. Ad Identifiers and ATT</a>
-            <a href="#p6">6. Account Deletion and Exceptions</a>
-            <a href="#p7">7. Your Rights</a>
-            <a href="#p8">8. Security Measures</a>
-            <a href="#p9">9. Children's Information</a>
-            <a href="#p10">10. Policy Changes</a>
-            <a href="#p11">11. Privacy Officer and Contact</a>
-            <div class="contact-box">Contact: omilsoft@gmail.com</div>
-            <div class="toc-group">
-              <div class="toc-label">Quick Links</div>
-              <a href="./account-deletion.html">Account Deletion</a>
-              <a href="./community-policy.html">Community Policy</a>
-            </div>
-          </nav>
-        </aside>
       </div>
     </main>
 
-    <footer class="shell foot">
-      © 2026 OMILSOFT. All rights reserved.
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="wordmark" lang="ko">타닥타닥</span>
+          <p>Korean typing practice, from quick replies to work emails.</p>
+        </div>
+        <nav class="footer-links" aria-label="Policies and support">
+            <a href="./privacy.html">Privacy</a>
+            <a href="./terms.html">Terms</a>
+            <a href="./support.html">Support</a>
+            <a href="./account-deletion.html">Account deletion</a>
+            <a href="./community-policy.html">Community</a>
+            <a href="./operator-info.html">Operator info</a>
+        </nav>
+        <div class="footer-meta">
+          <dl class="footer-operator">
+            <div><dt>Business</dt><dd>OMILSOFT</dd></div>
+            <div><dt>Representative</dt><dd>Jeong Dongcheon</dd></div>
+            <div><dt>Registration No.</dt><dd>766-11-02666</dd></div>
+            <div><dt>Address</dt><dd>Sangdo-dong, Dongjak-gu, Seoul</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:omilsoft@gmail.com">omilsoft@gmail.com</a></dd></div>
+          </dl>
+          <p class="copyright">© 2026 OMILSOFT. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
+    <script>
+(function () {
+  var d = document.querySelector('.toc-details');
+  if (!d) return;
+  var mq = window.matchMedia('(min-width: 1024px)');
+  function sync() { if (mq.matches) d.open = true; }
+  if (!mq.matches) d.open = false;
+  mq.addEventListener ? mq.addEventListener('change', sync) : mq.addListener(sync);
+  d.addEventListener('click', function (e) {
+    if (e.target.closest('a[href^="#"]') && !mq.matches) d.open = false;
+  });
+  var links = Array.prototype.slice.call(d.querySelectorAll('a[href^="#"]'));
+  if (!('IntersectionObserver' in window) || !links.length) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      links.forEach(function (a) { a.removeAttribute('aria-current'); });
+      var a = map[en.target.id];
+      if (a) a.setAttribute('aria-current', 'location');
+    });
+  }, { rootMargin: '-15% 0px -70% 0px' });
+  Object.keys(map).forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
+})();
+</script>
+    <script>
+(function () {
+  var nav = document.querySelector('.site-nav'), cur = nav && nav.querySelector('[aria-current]');
+  if (cur && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = cur.offsetLeft - (nav.clientWidth - cur.offsetWidth) / 2;
+})();
+</script>
   </body>
 </html>
