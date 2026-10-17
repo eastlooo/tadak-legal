@@ -52,8 +52,8 @@
           <h1>Tadak Privacy Policy</h1>
           <p class="hero-sub">How we collect, use, retain, and delete personal information</p>
           <div class="meta">
-            <span class="chip">Effective: October 6, 2026</span>
-            <span class="chip">Announced: October 5, 2026</span>
+            <span class="chip">Effective: October 25, 2026</span>
+            <span class="chip">Announced: October 18, 2026</span>
           </div>
         </div>
       </section>
@@ -92,8 +92,9 @@
             <ul>
               <li>Tadak processes account data, nicknames, typing practice records, text you write, reports and feedback, and purchase- and ad-related information to the extent needed to operate the service.</li>
               <li>Your real name and profile photo from social sign-in (Google, Apple, Kakao) are <strong>not stored in your service profile</strong>; the app only uses the nickname you choose. However, the name and photo URL that Google or Kakao send at sign-in may be kept in the login record of our authentication system (Supabase Auth) (see 1-1).</li>
-              <li>When you use <strong>AI Writing</strong>, the topic and situation description you select or enter are sent to OpenAI to generate practice text. OpenAI does not use this data to train its AI models.</li>
-              <li>We use Supabase (servers and data storage), Firebase Analytics and Crashlytics (usage analytics and crash reporting), Google AdMob (ads), Apple App Store and Google Play (payments), and OpenAI (AI text generation).</li>
+              <li>When you use <strong>AI Writing</strong>, the topic and situation description you select or enter are sent to OpenAI to generate practice text. Under OpenAI's API data policy, API data is not used to train models unless data sharing is explicitly opted into.</li>
+              <li>Public community posts are checked for harmful content through OpenAI, and we process information needed for push notifications and restoring friend challenge invites after installation.</li>
+              <li>We use Supabase (servers and data storage), Firebase Analytics, Crashlytics and Cloud Messaging (usage analytics, crash reporting and push notifications), Google AdMob (ads), Apple App Store and Google Play (payments), and OpenAI (AI text generation and community content safety checks).</li>
               <li>When you delete your account, data tied to your account such as your profile, records, and posts is deleted. Some operational and payment logs may remain with identifiers removed.</li>
             </ul>
           </div>
@@ -123,7 +124,7 @@
             <ul>
               <li>Title, body, author name, language, and visibility of text you write</li>
               <li>Text created with AI Writing (title, body) and whether it was saved</li>
-              <li>Posts published to the shared space ("Everyone's Space"), public/hidden status, quality score, report count, moderation notes</li>
+              <li>Posts published to the shared space ("Everyone's Space"), public/hidden status, quality score, report count, moderation notes, AI safety verdict (OK, review or block), category scores, and check time</li>
               <li>Likes, imports, sharing history, and your list of hidden/blocked authors</li>
             </ul>
             <h3 class="sub">1-5. AI Writing input</h3>
@@ -160,6 +161,15 @@
               <li>Per-install anonymous ID (anonymous_id), user ID, session ID, platform, app version</li>
               <li>Firebase Crashlytics crash reports: error details, device model, OS version, app state information, and a hash of your user ID (a value transformed so the original cannot be recovered)</li>
             </ul>
+            <h3 class="sub">1-10. Push notifications</h3>
+            <ul>
+              <li>Device push token (a Firebase Cloud Messaging token used to deliver notifications through FCM/APNs), user identifier, platform (iOS/Android), app version, app language (locale), notification enabled state, and token registration/update time</li>
+              <li>Your "Reactions to my writing" preference, summaries of practices, likes and imports on public posts, and notification dispatch records (date, dispatch processing and completion times)</li>
+            </ul>
+            <h3 class="sub">1-11. Friend challenge invite restoration</h3>
+            <ul>
+              <li>If you open a friend challenge link before installing the app, we temporarily store an invite record identifier, challenge code, creation and claim times, a salted hash of your IP address, screen width and height, device pixel ratio, time zone, language, platform (iOS/Android), and OS major version (when available) to restore the challenge after installation. This invite record does not store your raw IP address, raw user agent, or a unique device identifier.</li>
+            </ul>
           </section>
 
           <section id="p2">
@@ -169,7 +179,9 @@
               <li>Saving typing practice records and providing rankings, missions, achievements, and transcription records</li>
               <li>Keeping your personal posts and handling public/private status in the shared space</li>
               <li>AI Writing: generating the practice text you request and checking inputs and outputs for harmful content</li>
-              <li>Receiving community reports, hiding/blocking, reviewing sanctions, and preventing policy violations</li>
+              <li>AI safety checks on public community posts, automatically hiding clearly harmful posts, queuing borderline cases for human review, weighting reports based on account creation time, previous report outcomes and reporting activity, hiding/blocking, reviewing enforcement, and preventing policy violations</li>
+              <li>Sending push notifications: at 20:00 Korea Standard Time (KST) each day, eligible users receive at most one "Reactions to my writing" digest of practices, likes and imports on their public posts over the previous 24 hours. You can turn this digest off in Settings under "Reactions to my writing" or turn app notifications off in your OS notification settings.</li>
+              <li>Restoring friend challenge links after app installation and preventing duplicate restoration and misuse of invites.</li>
               <li>Reviewing feedback, responding to errors, and providing customer support</li>
               <li>Serving ads, granting rewarded-ad rewards, and processing purchases, subscriptions, restores, and refunds</li>
               <li>Analyzing service usage and improving quality (Firebase Analytics data is not linked to Google Ads and is used only to improve the app)</li>
@@ -182,6 +194,9 @@
             <h3 class="sub">3-1. Retention periods</h3>
             <ul>
               <li>Account, profile, practice records, posts, AI-created text, public posts, likes/imports, and hide/block data are kept while your account exists and deleted when you delete your account.</li>
+              <li>Community safety results (verdict, category scores and check time) are kept with the post and deleted when that post is deleted.</li>
+              <li>Push tokens and notification dispatch records are deleted when you delete your account. When app notifications are disabled, the token is retained in a disabled state and is not used for delivery. Turning off only "Reactions to my writing" stops only that digest.</li>
+              <li>A friend challenge invite can be restored once within 60 minutes of creation. Invite records older than 24 hours are deleted when a new invite record or restoration request is processed.</li>
               <li>We do not store the original AI Writing input on our server. See Section 4 for OpenAI's retention.</li>
               <li>Post reports are deleted when you delete your account. User reports may remain with reporter and reported-user identifiers removed, to preserve moderation history.</li>
               <li>Feedback and analytics, ad, and payment event logs are kept with account identifiers removed or partially masked, for service improvement, fraud prevention, and payment support, for 1 year from collection and then destroyed. Payment-related records that must be kept by law follow the periods below.</li>
@@ -203,25 +218,25 @@
             <h3 class="sub">Supabase, Inc.</h3>
             <ul>
               <li>Entrusted tasks: authentication, database and server operations</li>
-              <li>Information transferred: account, profile, records, content, purchase, and log information described in Section 1</li>
+              <li>Information transferred: account, profile, records, content, purchase, and log information described in Section 1, community safety results, push notification information, and friend challenge invite restoration information</li>
               <li>Country of processing: Republic of Korea (data stored in the Asia Pacific (Seoul) region)</li>
               <li>Retention: per Section 3</li>
               <li>Contact: privacy@supabase.com</li>
             </ul>
             <h3 class="sub">OpenAI, L.L.C.</h3>
             <ul>
-              <li>Entrusted tasks: generating AI practice text; checking inputs and outputs for harmful content (moderation)</li>
-              <li>Information transferred: AI Writing input (Section 1-5) and generated text. User ID, email, and nickname are not sent.</li>
+              <li>Entrusted tasks: generating AI practice text; checking inputs, outputs and public community posts for harmful content (moderation and classification)</li>
+              <li>Information transferred: AI Writing input (Section 1-5), generated text, and the title, body, author name and posting nickname of public community posts. User ID and email are not sent as separate fields.</li>
               <li>Country of processing: United States</li>
               <li>Retention: see "About our use of OpenAI" below</li>
               <li>Contact: privacy@openai.com</li>
             </ul>
-            <h3 class="sub">Google LLC (Firebase Analytics, Firebase Crashlytics)</h3>
+            <h3 class="sub">Google LLC (Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging)</h3>
             <ul>
-              <li>Entrusted tasks: usage analytics, crash reporting</li>
-              <li>Information transferred: information in Section 1-9</li>
+              <li>Entrusted tasks: usage analytics, crash reporting, push notification delivery</li>
+              <li>Information transferred: information in Section 1-9, device push tokens and notification content (including public post titles and reaction summaries)</li>
               <li>Country of processing: United States</li>
-              <li>Retention: Firebase Analytics data is kept for 14 months from collection and then deleted; Crashlytics crash reports follow Google's policy.</li>
+              <li>Retention: Firebase Analytics data is kept for 14 months from collection and then deleted; Crashlytics crash reports and Cloud Messaging retention follow Google's policy.</li>
               <li>Contact: <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a></li>
             </ul>
             <h3 class="sub">Google LLC (AdMob)</h3>
@@ -248,16 +263,17 @@
               <li>Retention: per each company's policy</li>
               <li>Contact: <a href="https://www.apple.com/legal/privacy/contact/">Apple privacy inquiries</a>, <a href="https://support.google.com/policies/contact/general_privacy_form">Google privacy inquiries</a></li>
             </ul>
-            <p>If you do not want your information transferred abroad, you can choose not to use the relevant features (AI Writing, social sign-in, in-app purchases, etc.) or request account deletion. In that case, those features will not be available. Transfers related to usage analytics, crash reporting, and ads happen by default while you use the app, so if you do not want them, please stop using and delete the app. You can refuse personalized ads through ATT on iOS or your Advertising ID settings on Android; non-personalized ads may still be shown.</p>
+            <p>If you do not want your information transferred abroad, you can choose not to use the relevant features (AI Writing, public community sharing, push notifications, social sign-in, in-app purchases, etc.) or request account deletion. In that case, those features will not be available. Transfers related to usage analytics, crash reporting, and ads happen by default while you use the app, so if you do not want them, please stop using and delete the app. You can refuse personalized ads through ATT on iOS or your Advertising ID settings on Android; non-personalized ads may still be shown.</p>
 
             <div class="section-note">
               <p><strong>About our use of OpenAI</strong></p>
               <ul>
                 <li>The topic you choose in AI Writing or the situation description you enter (including relationship, tone, length, and any optional form of address or recipient name) and your weak-spot summary are sent to the OpenAI API to create practice text.</li>
-                <li>Inputs and generated text are checked for harmful content with the OpenAI Moderation API. If a threshold is exceeded, the text is not generated or not shown.</li>
-                <li>Tadak does not send account identifiers such as your user ID, email, or nickname to OpenAI.</li>
-                <li>Under OpenAI's API policy, data sent through the API is not used to train OpenAI models.</li>
-                <li>Tadak sends requests with response storage turned off (<code>store: false</code>). OpenAI retains data for up to 30 days for abuse monitoring and deletes it after that period (unless legally required to keep it).</li>
+                <li>AI Writing inputs and generated text are checked for harmful content with the OpenAI Moderation API. If a threshold is exceeded, the text is not generated or not shown.</li>
+                <li>The title, body, author name and posting nickname of public community posts are sent to the OpenAI Moderation API and classification API for safety checks. Clearly harmful posts are automatically hidden, and borderline cases are queued for human review. Verdicts and category scores are stored with the post.</li>
+                <li>AI Writing requests do not send user ID, email or nickname as separate fields. Community checks include the public post information described above.</li>
+                <li>Under <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's API data policy</a>, data sent through the API is not used to train OpenAI models unless data sharing is explicitly opted into.</li>
+                <li>AI text generation requests turn response storage off (<code>store: false</code>). Under OpenAI's policy, the Moderation API does not retain inputs or outputs; abuse monitoring logs for text generation and classification APIs may be retained for up to 30 days by default. Longer retention may apply where legally required or necessary to protect services or third parties from harm.</li>
                 <li>The daily "Today's Text" and shared suggested topics are shared content that our server creates with OpenAI without any user information.</li>
               </ul>
             </div>
@@ -279,7 +295,7 @@
             <h2>6. Account Deletion and Exceptions<a class="anchor" href="#p6" aria-label="Link to this section" data-added></a></h2>
             <ul>
               <li>In-app path: <code>Profile &gt; Account Management &gt; Delete</code></li>
-              <li>Deleted data: data directly tied to your account, including profile, practice records, posts, AI-created text, public posts in the shared space, likes, imports, post report history, hide/block data, and login records in the authentication system</li>
+              <li>Deleted data: data directly tied to your account, including profile, practice records, posts, AI-created text, public posts in the shared space and their safety results, likes, imports, post report history, hide/block data, push tokens, writing reaction digest preferences and dispatch records, and login records in the authentication system</li>
               <li>After deletion, analytics, feedback, ad, and payment operational logs, ATT/review events, user report moderation records, and app store purchase history may remain in anonymized form or separated from your account for the retention periods in Section 3 (operational logs: 1 year from collection; payment records: statutory periods) and are then destroyed.</li>
               <li>Closing or unlinking your account with an external sign-in provider (Google, Apple, Kakao) must be done separately in that provider's settings.</li>
             </ul>
@@ -315,9 +331,9 @@
           <section id="p10">
             <h2>10. Policy Changes<a class="anchor" href="#p10" aria-label="Link to this section" data-added></a></h2>
             <ul>
-              <li>If service features, external integrations, or retention standards change, we will notify you through an in-app notice or this page before the change takes effect.</li>
-              <li>This policy was announced on October 5, 2026 and takes effect on October 6, 2026.</li>
-              <li>Revision history: previous policy effective March 6, 2026</li>
+              <li>If service features, collected items, processors, external integrations, or retention rules change, we will announce the changes in the app or on this page at least 7 days before they take effect.</li>
+              <li>This policy was announced on October 18, 2026 and takes effect on October 25, 2026.</li>
+              <li>Previous policy effective dates: October 6, 2026 and March 6, 2026. See the revision history below.</li>
             </ul>
           </section>
 
@@ -342,6 +358,16 @@
               <a href="./account-deletion.html">Account Deletion</a>
               <a href="./community-policy.html">Community Policy</a>
             </div>
+          </section>
+
+          <section id="history">
+            <h2>Revision history</h2>
+            <ul>
+              <li>2026-10-25: Clarified community AI safety transfers, stored verdicts, automatic hiding, human review, weighted reports and OpenAI data policy.</li>
+              <li>2026-10-25: Added push token and writing reaction digest data, delivery time, opt-out, retention and deletion rules, and Firebase Cloud Messaging processing.</li>
+              <li>2026-10-25: Added friend challenge restoration fields, the 60-minute claim window and cleanup of invite records older than 24 hours.</li>
+            </ul>
+            <p>Previous version: <a href="https://github.com/eastlooo/tadak-legal/blob/bdc2725321ec1affeb01004ab23db24216e05cff/en/privacy.html">2026-10-06 effective</a></p>
           </section>
         </article>
       </div>
