@@ -81,7 +81,7 @@ p.hero-sub { color: var(--muted); margin-bottom: 24px; }
 .contact-card > p:has(a[href^='mailto:']) { margin-top: 4px; margin-bottom: 16px; }
 .contact-card a[href^='mailto:'] { font-size: clamp(20px, 3vw, 28px); font-weight: 600; letter-spacing: -.025em; }
 .anchor { display: inline-flex; align-items: center; justify-content: center; width: 44px; min-height: 44px; margin-left: 4px; color: var(--link); text-decoration: none; vertical-align: middle; }
-.anchor::after { content: '#'; font-size: 15px; font-weight: 400; opacity: .38; }
+.anchor::after { content: '#'; font-size: 15px; font-weight: 400; opacity: 1; }
 h2:hover .anchor::after, h3:hover .anchor::after, .anchor:focus-visible::after { opacity: 1; }
 .inline-links { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 16px; }
 .inline-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; }
