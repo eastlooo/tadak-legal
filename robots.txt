@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eastlooo.github.io/tadak-legal/sitemap.xml

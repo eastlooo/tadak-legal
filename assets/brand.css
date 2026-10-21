@@ -1,0 +1,48 @@
+/* TADAK Paper · shared by the product landing and legal sites.
+ * Copy this file into each site's assets; GitHub Pages deploys repos independently.
+ * Keep color and type changes here so both sites remain one brand family. */
+:root {
+  --paper: #fafaf8;
+  --paper-deep: #f1efe9;
+  --surface: #ffffff;
+  --ink: #242524;
+  --muted: #62645f;
+  --line: #d9d9d2;
+  --cobalt: #3d7bea;
+  --link: #235db7;
+  --white: #ffffff;
+  --brand-paper: var(--paper);
+  --brand-ink: var(--ink);
+  --brand-accent: var(--cobalt);
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, monospace;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --page-width: 1184px;
+  --reading-width: 68ch;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  color-scheme: light dark;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1c1e1d;
+    --paper-deep: #252826;
+    --surface: #222523;
+    --ink: #f1f1eb;
+    --muted: #b1b6ae;
+    --line: #41463f;
+    --cobalt: #85b0ff;
+    --link: #a1c2ff;
+  }
+}
